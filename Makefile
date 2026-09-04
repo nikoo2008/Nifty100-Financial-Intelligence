@@ -1,7 +1,13 @@
-.PHONY: load ratios test report dashboard api clean
+.PHONY: load db validate ratios test report dashboard api clean
 
 load:
 	python src/etl/loader.py
+
+db:
+	python -m src.etl.database
+
+validate:
+	python -m src.etl.validator
 
 ratios:
 	python src/analytics/ratios.py

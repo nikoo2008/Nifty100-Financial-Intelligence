@@ -1,0 +1,1193 @@
+dataset,rule,severity,row,column,value,message
+companies,TEXT_NOT_EMPTY,WARNING,5,company_name,,Text field 'company_name' is empty.
+companies,TEXT_NOT_EMPTY,WARNING,38,company_name,,Text field 'company_name' is empty.
+companies,TEXT_NOT_EMPTY,WARNING,46,company_name,,Text field 'company_name' is empty.
+companies,TEXT_NOT_EMPTY,WARNING,54,company_name,,Text field 'company_name' is empty.
+profitandloss,YEAR_NOT_NULL,ERROR,12,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,24,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,37,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,46,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,59,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,72,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,85,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,98,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,111,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,124,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,132,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,145,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,158,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,171,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,184,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,195,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,208,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,221,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,234,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,247,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,260,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,273,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,286,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,299,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,312,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,325,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,338,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,351,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,364,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,377,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,390,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,403,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,416,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,429,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,442,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,455,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,468,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,481,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,494,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,507,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,520,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,532,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,545,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,558,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,571,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,584,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,597,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,610,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,623,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,636,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,647,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,660,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,673,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,686,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,689,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,702,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,715,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,728,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,735,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,748,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,761,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,774,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,787,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,800,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,813,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,826,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,839,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,852,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,865,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,878,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,891,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,904,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,917,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,930,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,943,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,956,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,969,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,982,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,995,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1008,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1033,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1046,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1059,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1072,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1085,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1098,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1111,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1124,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1137,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1150,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1163,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1176,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1189,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1202,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1215,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1228,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1241,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1249,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1262,year,,Year cannot be null.
+profitandloss,YEAR_NOT_NULL,ERROR,1275,year,,Year cannot be null.
+profitandloss,PERCENTAGE_RANGE,ERROR,146,opm_percentage,1353,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,147,opm_percentage,2307,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,148,opm_percentage,3097,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,149,opm_percentage,3466,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,150,opm_percentage,-5715,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,151,opm_percentage,-10277,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,152,opm_percentage,-5447,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,153,opm_percentage,-9859,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,154,opm_percentage,-2510,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,155,opm_percentage,3170,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,156,opm_percentage,13857,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,157,opm_percentage,11952,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,158,opm_percentage,9061,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,185,opm_percentage,1367,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,186,opm_percentage,1986,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,187,opm_percentage,2867,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,188,opm_percentage,3935,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,189,opm_percentage,6310,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,190,opm_percentage,7608,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,191,opm_percentage,6314,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,192,opm_percentage,9906,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,193,opm_percentage,16018,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,194,opm_percentage,19987,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,195,opm_percentage,21417,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,196,opm_percentage,1006,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,197,opm_percentage,809,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,198,opm_percentage,902,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,199,opm_percentage,-11700,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,200,opm_percentage,-4372,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,201,opm_percentage,-9197,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,202,opm_percentage,-5414,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,203,opm_percentage,-11728,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,204,opm_percentage,-6957,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,205,opm_percentage,-2948,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,206,opm_percentage,6329,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,207,opm_percentage,4102,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,208,opm_percentage,3526,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,287,opm_percentage,655,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,288,opm_percentage,-672,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,289,opm_percentage,-621,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,290,opm_percentage,-8008,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,291,opm_percentage,-5775,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,292,opm_percentage,-13350,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,293,opm_percentage,-11590,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,294,opm_percentage,-12867,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,295,opm_percentage,-18367,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,296,opm_percentage,-13657,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,297,opm_percentage,-9877,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,298,opm_percentage,-7745,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,299,opm_percentage,-8985,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,300,opm_percentage,472,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,301,opm_percentage,578,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,302,opm_percentage,696,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,303,opm_percentage,899,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,304,opm_percentage,1143,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,305,opm_percentage,1451,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,306,opm_percentage,1888,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,307,opm_percentage,1699,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,308,opm_percentage,2094,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,309,opm_percentage,2924,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,310,opm_percentage,3515,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,311,opm_percentage,4548,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,312,opm_percentage,5175,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,313,opm_percentage,2214,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,314,opm_percentage,2147,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,315,opm_percentage,2163,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,316,opm_percentage,2480,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,317,opm_percentage,2496,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,318,opm_percentage,2826,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,319,opm_percentage,3097,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,320,opm_percentage,3206,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,321,opm_percentage,4252,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,322,opm_percentage,4553,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,323,opm_percentage,5027,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,324,opm_percentage,6291,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,325,opm_percentage,6906,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,326,opm_percentage,18087,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,327,opm_percentage,17766,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,328,opm_percentage,17343,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,329,opm_percentage,18714,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,330,opm_percentage,12448,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,331,opm_percentage,9288,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,332,opm_percentage,25007,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,333,opm_percentage,21581,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,334,opm_percentage,18628,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,335,opm_percentage,24721,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,336,opm_percentage,44232,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,337,opm_percentage,47971,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,338,opm_percentage,46610,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,495,opm_percentage,3534,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,496,opm_percentage,5602,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,497,opm_percentage,7214,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,498,opm_percentage,9037,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,499,opm_percentage,11374,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,500,opm_percentage,13374,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,501,opm_percentage,16592,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,502,opm_percentage,14593,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,503,opm_percentage,16848,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,504,opm_percentage,20795,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,505,opm_percentage,29932,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,506,opm_percentage,-44685,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,507,opm_percentage,-57587,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,508,opm_percentage,525,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,509,opm_percentage,605,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,510,opm_percentage,874,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,511,opm_percentage,953,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,512,opm_percentage,972,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,513,opm_percentage,1074,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,514,opm_percentage,1215,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,515,opm_percentage,1141,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,516,opm_percentage,1235,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,517,opm_percentage,778,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,519,opm_percentage,531,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,520,opm_percentage,725,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,521,opm_percentage,3553,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,522,opm_percentage,3520,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,523,opm_percentage,4424,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,524,opm_percentage,4585,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,525,opm_percentage,5334,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,526,opm_percentage,5025,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,527,opm_percentage,4070,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,528,opm_percentage,4058,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,529,opm_percentage,3256,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,530,opm_percentage,4099,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,531,opm_percentage,5235,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,532,opm_percentage,5561,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,533,opm_percentage,7699,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,534,opm_percentage,8024,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,535,opm_percentage,8844,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,536,opm_percentage,7778,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,537,opm_percentage,12317,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,538,opm_percentage,13695,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,539,opm_percentage,15511,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,540,opm_percentage,14306,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,541,opm_percentage,17559,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,542,opm_percentage,28347,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,543,opm_percentage,22666,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,544,opm_percentage,23872,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,545,opm_percentage,27931,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,546,opm_percentage,4220,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,547,opm_percentage,4759,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,548,opm_percentage,5412,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,549,opm_percentage,5910,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,550,opm_percentage,6328,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,551,opm_percentage,7499,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,552,opm_percentage,8880,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,553,opm_percentage,9861,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,554,opm_percentage,11626,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,555,opm_percentage,12857,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,556,opm_percentage,14147,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,557,opm_percentage,14659,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,558,opm_percentage,14759,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,559,opm_percentage,-15085,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,560,opm_percentage,-13084,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,561,opm_percentage,-16120,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,562,opm_percentage,-26955,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,563,opm_percentage,-37737,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,564,opm_percentage,-44906,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,565,opm_percentage,-50971,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,566,opm_percentage,-45190,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,567,opm_percentage,-44805,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,568,opm_percentage,-26558,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,569,opm_percentage,-17341,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,570,opm_percentage,-14152,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,571,opm_percentage,-31575,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,572,opm_percentage,-178,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,573,opm_percentage,-225,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,574,opm_percentage,-221,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,575,opm_percentage,764,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,576,opm_percentage,919,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,577,opm_percentage,-262,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,578,opm_percentage,1669,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,579,opm_percentage,1772,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,580,opm_percentage,2072,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,581,opm_percentage,1016,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,582,opm_percentage,1264,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,583,opm_percentage,2577,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,584,opm_percentage,3363,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,585,opm_percentage,745,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,586,opm_percentage,1504,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,587,opm_percentage,1655,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,588,opm_percentage,1842,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,589,opm_percentage,1806,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,590,opm_percentage,1771,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,591,opm_percentage,541,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,592,opm_percentage,-319,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,593,opm_percentage,-390,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,594,opm_percentage,-2163,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,595,opm_percentage,-1757,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,596,opm_percentage,-1829,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,597,opm_percentage,321,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,598,opm_percentage,286,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,599,opm_percentage,335,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,600,opm_percentage,288,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,601,opm_percentage,329,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,602,opm_percentage,379,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,603,opm_percentage,942,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,604,opm_percentage,-437,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,605,opm_percentage,-553,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,606,opm_percentage,-2469,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,607,opm_percentage,-839,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,608,opm_percentage,2067,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,609,opm_percentage,2978,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,610,opm_percentage,1323,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,716,opm_percentage,-1789,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,717,opm_percentage,-1379,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,718,opm_percentage,-3366,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,719,opm_percentage,-2263,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,720,opm_percentage,-3965,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,721,opm_percentage,-4141,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,722,opm_percentage,-5114,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,723,opm_percentage,-5005,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,724,opm_percentage,-9958,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,725,opm_percentage,-8512,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,726,opm_percentage,-5746,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,727,opm_percentage,-13382,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,728,opm_percentage,-14146,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,942,opm_percentage,101,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1243,opm_percentage,-171,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1263,opm_percentage,855,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1264,opm_percentage,433,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1265,opm_percentage,1904,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1266,opm_percentage,3164,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1267,opm_percentage,2219,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1268,opm_percentage,3030,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1269,opm_percentage,-151,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1270,opm_percentage,4069,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1272,opm_percentage,558,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1273,opm_percentage,6521,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1274,opm_percentage,16331,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1275,opm_percentage,15908,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,94,dividend_payout,151,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,214,dividend_payout,194,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,215,dividend_payout,244,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,240,dividend_payout,151,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,268,dividend_payout,106,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,269,dividend_payout,102,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,282,dividend_payout,204,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,327,dividend_payout,121,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,329,dividend_payout,121,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,330,dividend_payout,133,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,331,dividend_payout,146,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,368,dividend_payout,117,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,546,dividend_payout,104,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,554,dividend_payout,119,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,631,dividend_payout,-437,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,669,dividend_payout,101,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,782,dividend_payout,205,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,816,dividend_payout,150,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,818,dividend_payout,-230,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,824,dividend_payout,-228,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,833,dividend_payout,168,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,974,dividend_payout,859,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1037,dividend_payout,-999,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1060,dividend_payout,-319,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1061,dividend_payout,-114,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1062,dividend_payout,210,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1076,dividend_payout,-203,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1084,dividend_payout,-101,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1110,dividend_payout,150,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1134,dividend_payout,105,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1139,dividend_payout,-125,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1226,dividend_payout,357,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1227,dividend_payout,259,Percentage value must be between -100 and 100.
+profitandloss,PERCENTAGE_RANGE,ERROR,1269,dividend_payout,123,Percentage value must be between -100 and 100.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,47,"company_id,year","ADANIPORTS,2013.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,48,"company_id,year","ADANIPORTS,2014.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,49,"company_id,year","ADANIPORTS,2015.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,50,"company_id,year","ADANIPORTS,2016.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,51,"company_id,year","ADANIPORTS,2017.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,52,"company_id,year","ADANIPORTS,2018.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,53,"company_id,year","ADANIPORTS,2019.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,54,"company_id,year","ADANIPORTS,2020.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,55,"company_id,year","ADANIPORTS,2021.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,56,"company_id,year","ADANIPORTS,2022.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,57,"company_id,year","ADANIPORTS,2023.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,58,"company_id,year","ADANIPORTS,2024.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,60,"company_id,year","ADANIPORTS,2013.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,61,"company_id,year","ADANIPORTS,2014.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,62,"company_id,year","ADANIPORTS,2015.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,63,"company_id,year","ADANIPORTS,2016.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,64,"company_id,year","ADANIPORTS,2017.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,65,"company_id,year","ADANIPORTS,2018.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,66,"company_id,year","ADANIPORTS,2019.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,67,"company_id,year","ADANIPORTS,2020.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,68,"company_id,year","ADANIPORTS,2021.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,69,"company_id,year","ADANIPORTS,2022.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,70,"company_id,year","ADANIPORTS,2023.0",Duplicate company/year record detected.
+profitandloss,COMPANY_YEAR_UNIQUE,ERROR,71,"company_id,year","ADANIPORTS,2024.0",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,11,"company_id,year","ABB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,12,"company_id,year","ABB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,23,"company_id,year","ADANIENSOL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,24,"company_id,year","ADANIENSOL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,36,"company_id,year","ADANIENT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,37,"company_id,year","ADANIENT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,45,"company_id,year","ADANIGREEN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,46,"company_id,year","ADANIGREEN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,58,"company_id,year","ADANIPORTS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,59,"company_id,year","ADANIPORTS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,71,"company_id,year","ADANIPOWER,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,72,"company_id,year","ADANIPOWER,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,84,"company_id,year","AMBUJACEM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,85,"company_id,year","AMBUJACEM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,97,"company_id,year","APOLLOHOSP,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,98,"company_id,year","APOLLOHOSP,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,99,"company_id,year","ASIANPAINT,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,100,"company_id,year","ASIANPAINT,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,101,"company_id,year","ASIANPAINT,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,102,"company_id,year","ASIANPAINT,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,103,"company_id,year","ASIANPAINT,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,104,"company_id,year","ASIANPAINT,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,105,"company_id,year","ASIANPAINT,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,106,"company_id,year","ASIANPAINT,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,107,"company_id,year","ASIANPAINT,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,108,"company_id,year","ASIANPAINT,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,109,"company_id,year","ASIANPAINT,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,110,"company_id,year","ASIANPAINT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,111,"company_id,year","ASIANPAINT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,112,"company_id,year","ASIANPAINT,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,113,"company_id,year","ASIANPAINT,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,114,"company_id,year","ASIANPAINT,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,115,"company_id,year","ASIANPAINT,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,116,"company_id,year","ASIANPAINT,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,117,"company_id,year","ASIANPAINT,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,118,"company_id,year","ASIANPAINT,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,119,"company_id,year","ASIANPAINT,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,120,"company_id,year","ASIANPAINT,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,121,"company_id,year","ASIANPAINT,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,122,"company_id,year","ASIANPAINT,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,123,"company_id,year","ASIANPAINT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,124,"company_id,year","ASIANPAINT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,131,"company_id,year","ATGL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,132,"company_id,year","ATGL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,156,"company_id,year","BAJAJAUTO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,157,"company_id,year","BAJAJAUTO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,169,"company_id,year","BAJAJFINSV,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,170,"company_id,year","BAJAJFINSV,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,182,"company_id,year","BAJAJHLDNG,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,183,"company_id,year","BAJAJHLDNG,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,193,"company_id,year","BAJFINANCE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,194,"company_id,year","BAJFINANCE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,218,"company_id,year","BEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,219,"company_id,year","BEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,231,"company_id,year","BHARTIARTL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,232,"company_id,year","BHARTIARTL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,244,"company_id,year","BHEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,245,"company_id,year","BHEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,257,"company_id,year","BOSCHLTD,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,258,"company_id,year","BOSCHLTD,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,270,"company_id,year","BPCL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,271,"company_id,year","BPCL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,283,"company_id,year","BRITANNIA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,284,"company_id,year","BRITANNIA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,308,"company_id,year","CHOLAFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,309,"company_id,year","CHOLAFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,321,"company_id,year","CIPLA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,322,"company_id,year","CIPLA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,334,"company_id,year","COALINDIA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,335,"company_id,year","COALINDIA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,347,"company_id,year","DABUR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,348,"company_id,year","DABUR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,360,"company_id,year","DIVISLAB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,361,"company_id,year","DIVISLAB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,373,"company_id,year","DLF,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,374,"company_id,year","DLF,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,386,"company_id,year","DMART,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,387,"company_id,year","DMART,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,399,"company_id,year","DRREDDY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,400,"company_id,year","DRREDDY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,412,"company_id,year","EICHERMOT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,413,"company_id,year","EICHERMOT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,425,"company_id,year","GAIL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,426,"company_id,year","GAIL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,438,"company_id,year","GODREJCP,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,439,"company_id,year","GODREJCP,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,451,"company_id,year","GRASIM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,452,"company_id,year","GRASIM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,461,"company_id,year","HAL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,462,"company_id,year","HAL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,474,"company_id,year","HCLTECH,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,475,"company_id,year","HCLTECH,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,487,"company_id,year","HAVELLS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,488,"company_id,year","HAVELLS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,512,"company_id,year","HDFCLIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,513,"company_id,year","HDFCLIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,524,"company_id,year","HEROMOTOCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,525,"company_id,year","HEROMOTOCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,537,"company_id,year","HINDALCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,538,"company_id,year","HINDALCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,550,"company_id,year","HINDUNILVR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,551,"company_id,year","HINDUNILVR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,575,"company_id,year","ICICIGI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,576,"company_id,year","ICICIGI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,588,"company_id,year","ICICIPRULI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,589,"company_id,year","ICICIPRULI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,601,"company_id,year","INDIGO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,602,"company_id,year","INDIGO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,626,"company_id,year","INFY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,627,"company_id,year","INFY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,639,"company_id,year","IOC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,640,"company_id,year","IOC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,650,"company_id,year","IRCTC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,651,"company_id,year","IRCTC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,663,"company_id,year","IRFC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,664,"company_id,year","IRFC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,676,"company_id,year","ITC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,677,"company_id,year","ITC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,689,"company_id,year","ONGC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,690,"company_id,year","ONGC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,702,"company_id,year","NTPC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,703,"company_id,year","NTPC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,715,"company_id,year","NHPC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,716,"company_id,year","NHPC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,728,"company_id,year","NESTLEIND,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,729,"company_id,year","NESTLEIND,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,741,"company_id,year","NAUKRI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,742,"company_id,year","NAUKRI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,754,"company_id,year","MOTHERSON,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,755,"company_id,year","MOTHERSON,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,767,"company_id,year","MARUTI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,768,"company_id,year","MARUTI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,780,"company_id,year","M&M,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,781,"company_id,year","M&M,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,793,"company_id,year","LTIM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,794,"company_id,year","LTIM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,806,"company_id,year","LT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,807,"company_id,year","LT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,819,"company_id,year","LODHA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,820,"company_id,year","LODHA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,826,"company_id,year","LICI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,827,"company_id,year","LICI,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,851,"company_id,year","JSWSTEEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,852,"company_id,year","JSWSTEEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,864,"company_id,year","JSWENERGY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,865,"company_id,year","JSWENERGY,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,867,"company_id,year","JIOFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,868,"company_id,year","JIOFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,880,"company_id,year","JINDALSTEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,881,"company_id,year","JINDALSTEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,893,"company_id,year","PFC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,894,"company_id,year","PFC,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,906,"company_id,year","PIDILITIND,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,907,"company_id,year","PIDILITIND,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,908,"company_id,year","PNB,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,909,"company_id,year","PNB,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,910,"company_id,year","PNB,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,911,"company_id,year","PNB,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,912,"company_id,year","PNB,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,913,"company_id,year","PNB,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,914,"company_id,year","PNB,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,915,"company_id,year","PNB,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,916,"company_id,year","PNB,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,917,"company_id,year","PNB,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,918,"company_id,year","PNB,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,919,"company_id,year","PNB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,920,"company_id,year","PNB,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,921,"company_id,year","PNB,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,922,"company_id,year","PNB,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,923,"company_id,year","PNB,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,924,"company_id,year","PNB,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,925,"company_id,year","PNB,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,926,"company_id,year","PNB,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,927,"company_id,year","PNB,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,928,"company_id,year","PNB,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,929,"company_id,year","PNB,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,930,"company_id,year","PNB,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,931,"company_id,year","PNB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,932,"company_id,year","PNB,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,933,"company_id,year","PNB,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,934,"company_id,year","PNB,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,935,"company_id,year","PNB,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,936,"company_id,year","PNB,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,937,"company_id,year","PNB,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,938,"company_id,year","PNB,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,939,"company_id,year","PNB,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,940,"company_id,year","PNB,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,941,"company_id,year","PNB,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,942,"company_id,year","PNB,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,943,"company_id,year","PNB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,944,"company_id,year","PNB,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,945,"company_id,year","PNB,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,946,"company_id,year","PNB,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,947,"company_id,year","PNB,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,948,"company_id,year","PNB,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,949,"company_id,year","PNB,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,950,"company_id,year","PNB,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,951,"company_id,year","PNB,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,952,"company_id,year","PNB,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,953,"company_id,year","PNB,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,954,"company_id,year","PNB,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,955,"company_id,year","PNB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,956,"company_id,year","PNB,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,957,"company_id,year","PNB,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,958,"company_id,year","PNB,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,959,"company_id,year","PNB,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,960,"company_id,year","PNB,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,961,"company_id,year","PNB,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,962,"company_id,year","PNB,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,963,"company_id,year","PNB,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,964,"company_id,year","PNB,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,965,"company_id,year","PNB,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,966,"company_id,year","PNB,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,967,"company_id,year","PNB,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,968,"company_id,year","POWERGRID,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,969,"company_id,year","POWERGRID,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,970,"company_id,year","POWERGRID,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,971,"company_id,year","POWERGRID,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,972,"company_id,year","POWERGRID,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,973,"company_id,year","POWERGRID,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,974,"company_id,year","POWERGRID,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,975,"company_id,year","POWERGRID,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,976,"company_id,year","POWERGRID,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,977,"company_id,year","POWERGRID,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,978,"company_id,year","POWERGRID,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,979,"company_id,year","POWERGRID,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,980,"company_id,year","POWERGRID,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,981,"company_id,year","POWERGRID,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,982,"company_id,year","POWERGRID,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,983,"company_id,year","POWERGRID,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,984,"company_id,year","POWERGRID,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,985,"company_id,year","POWERGRID,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,986,"company_id,year","POWERGRID,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,987,"company_id,year","POWERGRID,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,988,"company_id,year","POWERGRID,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,989,"company_id,year","POWERGRID,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,990,"company_id,year","POWERGRID,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,991,"company_id,year","POWERGRID,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,992,"company_id,year","POWERGRID,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,993,"company_id,year","POWERGRID,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1005,"company_id,year","RECLTD,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1006,"company_id,year","RECLTD,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1018,"company_id,year","RELIANCE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1019,"company_id,year","RELIANCE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1031,"company_id,year","SBILIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1032,"company_id,year","SBILIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1044,"company_id,year","ZYDUSLIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1045,"company_id,year","ZYDUSLIFE,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1057,"company_id,year","SHREECEM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1058,"company_id,year","SHREECEM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1065,"company_id,year","ZOMATO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1066,"company_id,year","ZOMATO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1078,"company_id,year","WIPRO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1079,"company_id,year","WIPRO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1091,"company_id,year","VEDL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1092,"company_id,year","VEDL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1104,"company_id,year","SHRIRAMFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1105,"company_id,year","SHRIRAMFIN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1129,"company_id,year","UNITDSPR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1130,"company_id,year","UNITDSPR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1154,"company_id,year","SUNPHARMA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1155,"company_id,year","SUNPHARMA,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1167,"company_id,year","ULTRACEMCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1168,"company_id,year","ULTRACEMCO,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1180,"company_id,year","TVSMOTOR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1181,"company_id,year","TVSMOTOR,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1193,"company_id,year","TRENT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1194,"company_id,year","TRENT,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1206,"company_id,year","TORNTPHARM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1207,"company_id,year","TORNTPHARM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1219,"company_id,year","TITAN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1220,"company_id,year","TITAN,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1221,"company_id,year","TECHM,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1222,"company_id,year","TECHM,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1223,"company_id,year","TECHM,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1224,"company_id,year","TECHM,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1225,"company_id,year","TECHM,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1226,"company_id,year","TECHM,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1227,"company_id,year","TECHM,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1228,"company_id,year","TECHM,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1229,"company_id,year","TECHM,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1230,"company_id,year","TECHM,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1231,"company_id,year","TECHM,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1232,"company_id,year","TECHM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1233,"company_id,year","TECHM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1245,"company_id,year","TATACONSUM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1246,"company_id,year","TATACONSUM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1258,"company_id,year","TCS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1259,"company_id,year","TCS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1271,"company_id,year","TATASTEEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1272,"company_id,year","TATASTEEL,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1273,"company_id,year","TECHM,2013",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1274,"company_id,year","TECHM,2014",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1275,"company_id,year","TECHM,2015",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1276,"company_id,year","TECHM,2016",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1277,"company_id,year","TECHM,2017",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1278,"company_id,year","TECHM,2018",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1279,"company_id,year","TECHM,2019",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1280,"company_id,year","TECHM,2020",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1281,"company_id,year","TECHM,2021",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1282,"company_id,year","TECHM,2022",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1283,"company_id,year","TECHM,2023",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1284,"company_id,year","TECHM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1285,"company_id,year","TECHM,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1297,"company_id,year","TATAPOWER,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1298,"company_id,year","TATAPOWER,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1310,"company_id,year","TATAMOTORS,2024",Duplicate company/year record detected.
+balancesheet,COMPANY_YEAR_UNIQUE,ERROR,1311,"company_id,year","TATAMOTORS,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,0,"company_id,year","TCS,2013",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1,"company_id,year","TCS,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,2,"company_id,year","TCS,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,3,"company_id,year","TCS,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,4,"company_id,year","TCS,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,5,"company_id,year","TCS,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,6,"company_id,year","TCS,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,7,"company_id,year","TCS,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,8,"company_id,year","TCS,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,9,"company_id,year","TCS,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,10,"company_id,year","TCS,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,11,"company_id,year","TCS,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,13,"company_id,year","ABB,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,14,"company_id,year","ABB,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,15,"company_id,year","ABB,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,16,"company_id,year","ABB,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,17,"company_id,year","ABB,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,18,"company_id,year","ABB,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,19,"company_id,year","ABB,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,20,"company_id,year","ABB,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,21,"company_id,year","ABB,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,22,"company_id,year","ABB,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,23,"company_id,year","ABB,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,24,"company_id,year","ABB,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,25,"company_id,year","ABB,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,26,"company_id,year","ABB,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,27,"company_id,year","ABB,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,28,"company_id,year","ABB,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,29,"company_id,year","ABB,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,30,"company_id,year","ABB,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,31,"company_id,year","ABB,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,32,"company_id,year","ABB,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,33,"company_id,year","ABB,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,34,"company_id,year","ABB,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,145,"company_id,year","BAJAJAUTO,2013",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,146,"company_id,year","BAJAJAUTO,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,147,"company_id,year","BAJAJAUTO,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,148,"company_id,year","BAJAJAUTO,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,149,"company_id,year","BAJAJAUTO,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,150,"company_id,year","BAJAJAUTO,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,151,"company_id,year","BAJAJAUTO,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,152,"company_id,year","BAJAJAUTO,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,153,"company_id,year","BAJAJAUTO,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,154,"company_id,year","BAJAJAUTO,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,155,"company_id,year","BAJAJAUTO,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,156,"company_id,year","BAJAJAUTO,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,157,"company_id,year","BAJAJAUTO,2013",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,158,"company_id,year","BAJAJAUTO,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,159,"company_id,year","BAJAJAUTO,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,160,"company_id,year","BAJAJAUTO,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,161,"company_id,year","BAJAJAUTO,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,162,"company_id,year","BAJAJAUTO,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,163,"company_id,year","BAJAJAUTO,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,164,"company_id,year","BAJAJAUTO,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,165,"company_id,year","BAJAJAUTO,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,166,"company_id,year","BAJAJAUTO,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,167,"company_id,year","BAJAJAUTO,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,168,"company_id,year","BAJAJAUTO,2024",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1026,"company_id,year","TCS,2013",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1027,"company_id,year","TCS,2014",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1028,"company_id,year","TCS,2015",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1029,"company_id,year","TCS,2016",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1030,"company_id,year","TCS,2017",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1031,"company_id,year","TCS,2018",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1032,"company_id,year","TCS,2019",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1033,"company_id,year","TCS,2020",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1034,"company_id,year","TCS,2021",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1035,"company_id,year","TCS,2022",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1036,"company_id,year","TCS,2023",Duplicate company/year record detected.
+cashflow,COMPANY_YEAR_UNIQUE,ERROR,1037,"company_id,year","TCS,2024",Duplicate company/year record detected.
+analysis,NUMERIC_VALUE,ERROR,0,compounded_sales_growth,10 Years: 21%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,1,compounded_sales_growth,5 Years:       24%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,2,compounded_sales_growth,3 Years:       17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,3,compounded_sales_growth,TTM:            43%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,4,compounded_sales_growth,10 Years:     11%             ,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,5,compounded_sales_growth,5 Years:       10%             ,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,6,compounded_sales_growth,3 Years:       14%             ,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,7,compounded_sales_growth,TTM:            5%             ,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,8,compounded_sales_growth,10 Years:     8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,9,compounded_sales_growth,5 Years:       9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,10,compounded_sales_growth,3 Years:      13%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,11,compounded_sales_growth,5 Years:       22%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,12,compounded_sales_growth,TTM:           -3%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,13,compounded_sales_growth,3 Years:       30%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,14,compounded_sales_growth,TTM:            47%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,15,compounded_sales_growth,10 Years:     12%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,16,compounded_sales_growth,5 Years:       13%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,17,compounded_sales_growth,3 Years:       5%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,18,compounded_sales_growth,TTM:            3%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,19,compounded_sales_growth,10 Years:     23%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,0,compounded_profit_growth,10 Years: 22%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,1,compounded_profit_growth,5 Years:            6%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,2,compounded_profit_growth,3 Years:            9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,3,compounded_profit_growth,TTM:                 18%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,4,compounded_profit_growth,10 Years:          9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,5,compounded_profit_growth,5 Years:            8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,6,compounded_profit_growth,3 Years:            12%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,7,compounded_profit_growth,TTM:                 8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,8,compounded_profit_growth,10 Years:          3%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,9,compounded_profit_growth,5 Years:            4%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,10,compounded_profit_growth,3 Years:            0%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,11,compounded_profit_growth,5 Years:           23%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,12,compounded_profit_growth,TTM:                 1%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,13,compounded_profit_growth,3 Years:           26%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,14,compounded_profit_growth,TTM:                27%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,15,compounded_profit_growth,10 Years:         9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,16,compounded_profit_growth,5 Years:           11%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,17,compounded_profit_growth,3 Years:           10%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,18,compounded_profit_growth,TTM:                 8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,19,compounded_profit_growth,10 Years:          9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,0,stock_price_cagr,10 Years:     15%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,1,stock_price_cagr,     5 Years:       8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,2,stock_price_cagr,     3 Years:       7%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,3,stock_price_cagr,     1 Year:         -2%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,4,stock_price_cagr,    10 Years:      14%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,5,stock_price_cagr,      5 Years:      16%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,6,stock_price_cagr,      3 Years:      8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,7,stock_price_cagr,      1 Year:       16%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,8,stock_price_cagr,    10 Years:     12%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,9,stock_price_cagr,      5 Years:     20%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,10,stock_price_cagr,      3 Years:      -1%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,11,stock_price_cagr,      5 Years:       8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,12,stock_price_cagr,      1 Year:       39%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,13,stock_price_cagr,      3 Years:       8%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,14,stock_price_cagr,      1 Year:        13%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,15,stock_price_cagr,     10 Years:     15%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,16,stock_price_cagr,       5 Years:     22%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,17,stock_price_cagr,       3 Years:     4%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,18,stock_price_cagr,       1 Year:       27%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,19,stock_price_cagr,    10 Years:      9%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,0,roe,10 Years:     17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,1,roe,5 Years          14%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,2,roe,3 Years:         13%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,3,roe,Last Year:      12%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,4,roe,10 Years:       40%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,5,roe,5 Years:          44%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,6,roe,3 Years:          47%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,7,roe,Last Year:       52%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,8,roe,10 Years:        18%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,9,roe,5 Years:          17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,10,roe,3 Years:          17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,11,roe,5 Years:       17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,12,roe,Last Year:       14%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,13,roe,3 Years:       17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,14,roe,Last Year:    17%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,15,roe,10 Years:      27%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,16,roe,5 Years:        29%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,17,roe,3 Years:        31%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,18,roe,Last Year:     32%,Value must be numeric.
+analysis,NUMERIC_VALUE,ERROR,19,roe,10 Years:      16%,Value must be numeric.
+documents,COMPANY_YEAR_UNIQUE,ERROR,557,"company_id,year","HAL,2011",Duplicate company/year record detected.
+documents,COMPANY_YEAR_UNIQUE,ERROR,558,"company_id,year","HAL,2011",Duplicate company/year record detected.
+documents,URL_FORMAT,WARNING,25,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,26,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,27,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,28,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,29,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,30,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,31,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,55,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,56,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,57,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,58,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,59,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,60,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,61,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,62,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,63,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,69,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,70,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,71,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,73,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,74,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,75,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,76,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,78,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,79,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,89,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,90,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,91,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,93,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,94,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,95,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,106,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,107,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,108,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,110,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,111,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,117,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,121,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,126,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,127,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,139,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,140,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,142,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,143,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,150,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,151,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,152,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,153,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,154,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,155,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,156,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,157,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,158,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,159,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,174,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,175,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,186,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,190,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,191,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,206,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,207,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,222,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,223,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,238,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,239,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,350,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,351,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,366,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,367,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,377,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,382,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,383,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,398,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,399,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,414,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,430,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,431,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,446,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,447,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,456,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,457,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,458,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,459,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,460,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,461,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,462,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,463,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,477,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,478,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,479,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,494,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,495,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,510,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,511,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,526,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,527,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,542,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,543,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,560,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,573,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,574,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,588,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,589,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,590,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,602,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,604,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,605,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,606,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,619,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,620,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,621,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,622,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,623,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,639,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,640,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,655,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,656,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,671,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,672,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,688,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,704,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,718,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,719,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,720,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,730,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,731,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,732,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,733,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,734,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,735,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,736,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,751,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,752,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,767,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,768,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,769,annual_report,bseindia.com/xml-data/corpfiling/AttachHis/24a0940c-fa5a-4e36-a404-9dab3637ea0c.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,770,annual_report,bseindia.com/xml-data/corpfiling/AttachHis//ae413f27-7b30-4cdb-8f1b-8d82e5914e54.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,783,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,784,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,790,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,791,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,792,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,793,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,794,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,795,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,796,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,797,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,798,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,799,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,800,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,805,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,806,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,807,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,808,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,809,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,810,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,811,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,812,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,813,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,814,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,815,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,816,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,850,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,851,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,852,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,853,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,854,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,855,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,856,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,857,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,858,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,859,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,860,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,861,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,862,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,863,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,864,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,878,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,879,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,880,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,895,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,896,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,898,annual_report,bseindia.com/xml-data/corpfiling/AttachHis//b9e0c871-3353-4ef4-855e-069bcfd848e1.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,899,annual_report,bseindia.com/bseplus/AnnualReport/500247/73932500247.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,900,annual_report,bseindia.com/bseplus/AnnualReport/500247/69160500247.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,904,annual_report,bseindia.com/bseplus/AnnualReport/500247/5002470317.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,905,annual_report,5002470316.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,906,annual_report,5002470315.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,908,annual_report,untitled,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,909,annual_report,bseindia.com/bseplus/AnnualReport/500247/5002470312.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,910,annual_report,5002470311.pdf,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,911,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,912,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,919,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,920,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,921,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,922,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,923,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,924,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,925,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,926,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,927,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,928,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,933,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,934,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,935,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,936,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,937,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,938,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,939,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,940,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,941,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,942,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,943,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,944,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,959,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,960,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,969,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,970,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,971,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,972,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,973,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,974,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,975,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,976,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,991,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,992,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1007,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1008,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1023,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1024,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1039,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1040,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1071,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1072,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1087,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1088,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1102,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1103,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1104,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1119,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1120,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1134,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1135,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1136,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1151,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1152,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1167,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1168,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1182,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1183,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1184,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1198,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1199,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1200,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1208,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1209,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1210,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1211,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1212,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1213,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1214,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1215,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1216,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1232,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1246,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1247,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1248,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1262,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1263,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1264,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1279,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1280,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1311,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1312,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1327,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1328,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1343,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1344,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1359,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1360,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1375,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1376,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1389,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1390,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1391,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1392,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1406,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1407,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1408,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1423,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1424,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1439,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1440,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1455,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1456,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1470,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1471,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1472,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1487,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1488,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1502,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1503,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1504,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1505,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1514,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1515,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1516,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1517,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1518,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1519,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1520,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1535,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1536,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1551,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1552,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1556,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1557,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1558,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1559,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1560,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1561,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1562,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1563,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1564,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1565,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1566,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1567,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1568,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1583,annual_report,Null,URL should start with http:// or https://.
+documents,URL_FORMAT,WARNING,1584,annual_report,Null,URL should start with http:// or https://.
+documents,UNEXPECTED_COLUMN,WARNING,,,,Unexpected column detected: ''.
+prosandcons,TEXT_NOT_EMPTY,WARNING,6,pros,,Text field 'pros' is empty.
+prosandcons,TEXT_NOT_EMPTY,WARNING,7,pros,,Text field 'pros' is empty.
+prosandcons,TEXT_NOT_EMPTY,WARNING,8,pros,,Text field 'pros' is empty.
+prosandcons,TEXT_NOT_EMPTY,WARNING,11,pros,,Text field 'pros' is empty.
+prosandcons,TEXT_NOT_EMPTY,WARNING,12,pros,,Text field 'pros' is empty.
+prosandcons,TEXT_NOT_EMPTY,WARNING,15,cons,,Text field 'cons' is empty.
+prosandcons,UNEXPECTED_COLUMN,WARNING,,,,Unexpected column detected: ''.
