@@ -8,6 +8,7 @@ from typing import Any
 
 import pandas as pd
 
+from src.analytics.ratios import build_financial_ratios
 from src.etl.loader import CORE_DATASETS, load_all_core_datasets
 
 
@@ -46,6 +47,7 @@ def create_schema(connection: sqlite3.Connection) -> None:
     connection.execute("PRAGMA foreign_keys = ON")
     connection.executescript(
         """
+        DROP TABLE IF EXISTS financial_ratios;
         DROP TABLE IF EXISTS prosandcons;
         DROP TABLE IF EXISTS documents;
         DROP TABLE IF EXISTS analysis;
@@ -62,6 +64,24 @@ def create_schema(connection: sqlite3.Connection) -> None:
         if dataset != "companies":
             definitions[1] += " NOT NULL REFERENCES companies(id) ON UPDATE CASCADE"
         connection.execute(f'CREATE TABLE "{dataset}" ({", ".join(definitions)})')
+    connection.execute(
+        """CREATE TABLE financial_ratios (
+            ratio_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            company_id TEXT NOT NULL REFERENCES companies(id) ON UPDATE CASCADE,
+            year INTEGER,
+            operating_margin_pct REAL, net_margin_pct REAL, debt_to_equity REAL,
+            return_on_equity_pct REAL, return_on_capital_employed_pct REAL,
+            return_on_assets_pct REAL, asset_turnover REAL, fixed_asset_turnover REAL,
+            liabilities_to_assets REAL, interest_coverage REAL,
+            operating_cash_flow REAL, free_cash_flow REAL, financing_cash_flow REAL,
+            cash_conversion REAL, operating_cash_flow_margin_pct REAL,
+            dividend_payout REAL, financial_carveout TEXT, carveout_note TEXT,
+            source_roe_pct REAL, roe_source_difference_pct REAL, roe_source_crosscheck TEXT,
+            source_roce_pct REAL, roce_source_difference_pct REAL, roce_source_crosscheck TEXT,
+            cagr_3y REAL, cagr_5y REAL, cagr_10y REAL, cagr_edge_case TEXT,
+            cashflow_edge_case TEXT, ratio_edge_case TEXT, capital_allocation_pattern TEXT
+        )"""
+    )
 
 
 def _clean_dataframe(dataset: str, dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -110,6 +130,14 @@ def load_database(database_path: Path = DATABASE_PATH) -> tuple[pd.DataFrame, pd
                 dataframe.itertuples(index=False, name=None),
             )
             audit_rows.append({"dataset": dataset, "source_rows": len(dataframe), "rows_loaded": len(dataframe), "rows_rejected": 0})
+        ratios = build_financial_ratios(datasets)
+        ratio_columns = [column[1] for column in connection.execute("PRAGMA table_info(financial_ratios)").fetchall() if column[1] != "ratio_id"]
+        ratio_frame = ratios.reindex(columns=ratio_columns).where(ratios.notna(), None)
+        connection.executemany(
+            f'INSERT INTO financial_ratios ({", ".join(ratio_columns)}) VALUES ({", ".join("?" for _ in ratio_columns)})',
+            ratio_frame.itertuples(index=False, name=None),
+        )
+        audit_rows.append({"dataset": "financial_ratios", "source_rows": len(ratios), "rows_loaded": len(ratios), "rows_rejected": 0})
         fk_errors = connection.execute("PRAGMA foreign_key_check").fetchall()
         if fk_errors:
             raise RuntimeError(f"Foreign-key check failed: {fk_errors}")
@@ -118,6 +146,8 @@ def load_database(database_path: Path = DATABASE_PATH) -> tuple[pd.DataFrame, pd
     audit.to_csv(OUTPUT_DIR / "load_audit.csv", index=False)
     review = _manual_review(datasets)
     review.to_csv(OUTPUT_DIR / "manual_data_quality_review.csv", index=False)
+    latest_patterns = ratios.sort_values(["company_id", "year"], na_position="first").drop_duplicates("company_id", keep="last")
+    latest_patterns[["company_id", "capital_allocation_pattern"]].to_csv(OUTPUT_DIR / "capital_allocation.csv", index=False)
     return audit, review
 
 

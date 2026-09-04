@@ -10,7 +10,7 @@ validate:
 	python -m src.etl.validator
 
 ratios:
-	python src/analytics/ratios.py
+	python -m src.analytics.ratios
 
 test:
 	pytest tests/
