@@ -1,0 +1,23 @@
+presets:
+  quality: {min_roe: 15, min_roce: 12, max_debt_to_equity: 1.0}
+  growth: {min_cagr_5y: 10, min_operating_margin_pct: 10}
+  value: {max_debt_to_equity: 1.0, min_net_margin_pct: 5}
+  cash_compounders: {min_cash_conversion: 0.8, min_cagr_5y: 8}
+  debt_free: {max_debt_to_equity: 0.1, min_interest_coverage: 3}
+  dividend: {min_dividend_payout: 20}
+metrics:
+  roe: return_on_equity_pct
+  roce: return_on_capital_employed_pct
+  debt_to_equity: debt_to_equity
+  interest_coverage: interest_coverage
+  operating_margin: operating_margin_pct
+  net_margin: net_margin_pct
+  asset_turnover: asset_turnover
+  fixed_asset_turnover: fixed_asset_turnover
+  cash_conversion: cash_conversion
+  cagr_5y: cagr_5y
+  cagr_10y: cagr_10y
+  free_cash_flow: free_cash_flow
+  dividend_payout: dividend_payout
+  liabilities_to_assets: liabilities_to_assets
+  return_on_assets: return_on_assets_pct

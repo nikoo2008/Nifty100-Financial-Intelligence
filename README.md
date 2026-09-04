@@ -25,3 +25,7 @@ The final validation run reproduces 1,192 source-quality findings in `reports/va
 ## Sprint 2 outputs
 
 `src/analytics/ratios.py`, `cagr.py`, and `cashflow_kpis.py` calculate profitability, leverage, efficiency, cash-flow, and 3/5/10-year CAGR KPIs. The database load adds `financial_ratios`, writes `output/capital_allocation.csv`, and logs undefined calculations to `output/ratio_edge_cases.log`. Financial institutions receive an explicit carve-out for ROCE because their debt is operating funding. Current ratio is not calculated because the source has no current-assets/current-liabilities fields.
+
+## Sprint 3 outputs
+
+The screener supports 15 configured metrics, six presets, custom `min_`/`max_` thresholds, winsorized quality scoring, and a financials debt/equity carve-out. The peer engine writes percentile rankings, peer medians, and radar charts from available company history. Companies without peer data are retained with missing percentiles; no peer values are fabricated.

@@ -9,6 +9,8 @@ from typing import Any
 import pandas as pd
 
 from src.analytics.ratios import build_financial_ratios
+from src.analytics.peer import build_peer_percentiles
+from src.screener.engine import generate_screener_outputs
 from src.etl.loader import CORE_DATASETS, load_all_core_datasets
 
 
@@ -48,6 +50,7 @@ def create_schema(connection: sqlite3.Connection) -> None:
     connection.executescript(
         """
         DROP TABLE IF EXISTS financial_ratios;
+        DROP TABLE IF EXISTS peer_percentiles;
         DROP TABLE IF EXISTS prosandcons;
         DROP TABLE IF EXISTS documents;
         DROP TABLE IF EXISTS analysis;
@@ -82,6 +85,21 @@ def create_schema(connection: sqlite3.Connection) -> None:
             cashflow_edge_case TEXT, ratio_edge_case TEXT, capital_allocation_pattern TEXT
         )"""
     )
+    connection.execute("""CREATE TABLE peer_percentiles (
+        peer_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        company_id TEXT NOT NULL REFERENCES companies(id) ON UPDATE CASCADE,
+        peer_group TEXT NOT NULL,
+        return_on_equity_pct REAL, return_on_equity_pct_percentile REAL,
+        return_on_capital_employed_pct REAL, return_on_capital_employed_pct_percentile REAL,
+        debt_to_equity REAL, debt_to_equity_percentile REAL,
+        interest_coverage REAL, interest_coverage_percentile REAL,
+        operating_margin_pct REAL, operating_margin_pct_percentile REAL,
+        net_margin_pct REAL, net_margin_pct_percentile REAL,
+        asset_turnover REAL, asset_turnover_percentile REAL,
+        cash_conversion REAL, cash_conversion_percentile REAL,
+        cagr_5y REAL, cagr_5y_percentile REAL,
+        cagr_10y REAL, cagr_10y_percentile REAL
+    )""")
 
 
 def _clean_dataframe(dataset: str, dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -138,6 +156,14 @@ def load_database(database_path: Path = DATABASE_PATH) -> tuple[pd.DataFrame, pd
             ratio_frame.itertuples(index=False, name=None),
         )
         audit_rows.append({"dataset": "financial_ratios", "source_rows": len(ratios), "rows_loaded": len(ratios), "rows_rejected": 0})
+        percentiles = build_peer_percentiles(ratios, datasets["companies"])
+        peer_columns = [column[1] for column in connection.execute("PRAGMA table_info(peer_percentiles)").fetchall() if column[1] != "peer_id"]
+        peer_frame = percentiles.reindex(columns=peer_columns).where(percentiles.notna(), None)
+        connection.executemany(
+            f'INSERT INTO peer_percentiles ({", ".join(peer_columns)}) VALUES ({", ".join("?" for _ in peer_columns)})',
+            peer_frame.itertuples(index=False, name=None),
+        )
+        audit_rows.append({"dataset": "peer_percentiles", "source_rows": len(percentiles), "rows_loaded": len(percentiles), "rows_rejected": 0})
         fk_errors = connection.execute("PRAGMA foreign_key_check").fetchall()
         if fk_errors:
             raise RuntimeError(f"Foreign-key check failed: {fk_errors}")
@@ -148,6 +174,7 @@ def load_database(database_path: Path = DATABASE_PATH) -> tuple[pd.DataFrame, pd
     review.to_csv(OUTPUT_DIR / "manual_data_quality_review.csv", index=False)
     latest_patterns = ratios.sort_values(["company_id", "year"], na_position="first").drop_duplicates("company_id", keep="last")
     latest_patterns[["company_id", "capital_allocation_pattern"]].to_csv(OUTPUT_DIR / "capital_allocation.csv", index=False)
+    generate_screener_outputs(ratios, datasets["companies"])
     return audit, review
 
 
