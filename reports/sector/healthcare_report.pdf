@@ -1,0 +1,217 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260910100511+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260910100511+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 4255
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 779.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL 153.591 0 Td (Healthcare sector report) Tj T* -153.591 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 762.5354 cm
+Q
+q
+1 0 0 1 120.4724 636.5354 cm
+q
+.07451 .133333 .219608 rg
+n 0 126 354.3307 -18 re f*
+1 1 1 rg
+BT /F1 7 Tf 12 TL ET
+BT 1 0 0 1 6 116 Tm (Metric) Tj T* ET
+BT 1 0 0 1 232.7717 116 Tm (Median) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 6 98 Tm (return_on_equity_pct) Tj T* ET
+BT 1 0 0 1 232.7717 98 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 80 Tm (return_on_capital_employed_pct) Tj T* ET
+BT 1 0 0 1 232.7717 80 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 62 Tm (net_margin_pct) Tj T* ET
+BT 1 0 0 1 232.7717 62 Tm (17.45) Tj T* ET
+BT 1 0 0 1 6 44 Tm (debt_to_equity) Tj T* ET
+BT 1 0 0 1 232.7717 44 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 26 Tm (cagr_5y) Tj T* ET
+BT 1 0 0 1 232.7717 26 Tm (10.78) Tj T* ET
+BT 1 0 0 1 6 8 Tm (free_cash_flow) Tj T* ET
+BT 1 0 0 1 232.7717 8 Tm (nan) Tj T* ET
+q
+1 J
+1 j
+.827451 .827451 .827451 RG
+.25 w
+n 0 126 m 354.3307 126 l S
+n 0 0 m 354.3307 0 l S
+n 0 0 m 0 126 l S
+n 354.3307 0 m 354.3307 126 l S
+n 0 108 m 354.3307 108 l S
+n 0 90 m 354.3307 90 l S
+n 0 72 m 354.3307 72 l S
+n 0 54 m 354.3307 54 l S
+n 0 36 m 354.3307 36 l S
+n 0 18 m 354.3307 18 l S
+n 226.7717 0 m 226.7717 126 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 625.1969 cm
+Q
+q
+1 0 0 1 40.01575 595.1969 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Companies and latest available metrics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.44094 481.1969 cm
+q
+.07451 .133333 .219608 rg
+n 0 108 490.3937 -18 re f*
+1 1 1 rg
+BT /F1 6 Tf 12 TL ET
+BT 1 0 0 1 6 99 Tm (Ticker) Tj T* ET
+BT 1 0 0 1 62.69291 99 Tm (Company) Tj T* ET
+BT 1 0 0 1 227.1024 99 Tm (ROE) Tj T* ET
+BT 1 0 0 1 269.622 99 Tm (ROCE) Tj T* ET
+BT 1 0 0 1 312.1417 99 Tm (NPM) Tj T* ET
+BT 1 0 0 1 354.6614 99 Tm (D/E) Tj T* ET
+BT 1 0 0 1 397.1811 99 Tm (CAGR) Tj T* ET
+BT 1 0 0 1 439.7008 99 Tm (FCF) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 6 81 Tm (APOLLOHOSP) Tj T* ET
+BT 1 0 0 1 62.69291 81 Tm (Apollo Hospitals) Tj T* ET
+BT 1 0 0 1 227.1024 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 81 Tm (5.979774292833065) Tj T* ET
+BT 1 0 0 1 354.6614 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 81 Tm (14.660042602193135) Tj T* ET
+BT 1 0 0 1 439.7008 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 63 Tm (CIPLA) Tj T* ET
+BT 1 0 0 1 62.69291 63 Tm (Cipla Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 63 Tm (18.48337719135688) Tj T* ET
+BT 1 0 0 1 354.6614 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 63 Tm (9.513860126378049) Tj T* ET
+BT 1 0 0 1 439.7008 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 45 Tm (DRREDDY) Tj T* ET
+BT 1 0 0 1 62.69291 45 Tm (Dr Reddys Laboratories Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 45 Tm (17.44532325722886) Tj T* ET
+BT 1 0 0 1 354.6614 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 45 Tm (12.639644349571988) Tj T* ET
+BT 1 0 0 1 439.7008 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 27 Tm (SUNPHARMA) Tj T* ET
+BT 1 0 0 1 62.69291 27 Tm (Sun Pharmaceuticals Industri) Tj T* ET
+BT 1 0 0 1 227.1024 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 27 Tm (22.09787707720442) Tj T* ET
+BT 1 0 0 1 354.6614 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 27 Tm (10.78116321985565) Tj T* ET
+BT 1 0 0 1 439.7008 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 9 Tm (TORNTPHARM) Tj T* ET
+BT 1 0 0 1 62.69291 9 Tm (Torrent Pharmaceuticals Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 9 Tm (16.474960184038224) Tj T* ET
+BT 1 0 0 1 354.6614 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 9 Tm (6.932744476678732) Tj T* ET
+BT 1 0 0 1 439.7008 9 Tm (nan) Tj T* ET
+q
+1 J
+1 j
+.827451 .827451 .827451 RG
+.2 w
+n 0 108 m 490.3937 108 l S
+n 0 0 m 490.3937 0 l S
+n 0 0 m 0 108 l S
+n 490.3937 0 m 490.3937 108 l S
+n 0 90 m 490.3937 90 l S
+n 0 72 m 490.3937 72 l S
+n 0 54 m 490.3937 54 l S
+n 0 36 m 490.3937 36 l S
+n 0 18 m 490.3937 18 l S
+n 56.69291 0 m 56.69291 108 l S
+n 221.1024 0 m 221.1024 108 l S
+n 263.622 0 m 263.622 108 l S
+n 306.1417 0 m 306.1417 108 l S
+n 348.6614 0 m 348.6614 108 l S
+n 391.1811 0 m 391.1811 108 l S
+n 433.7008 0 m 433.7008 108 l S
+Q
+Q
+Q
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000592 00000 n 
+0000000872 00000 n 
+0000000931 00000 n 
+trailer
+<<
+/ID 
+[<df99fd3a22a7705bc6a232cbfe8fd523><df99fd3a22a7705bc6a232cbfe8fd523>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+5237
+%%EOF

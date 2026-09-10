@@ -1,0 +1,235 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260910100511+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260910100511+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 5029
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 40.01575 779.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL 191.607 0 Td (IT sector report) Tj T* -191.607 0 Td ET
+Q
+Q
+q
+1 0 0 1 40.01575 762.5354 cm
+Q
+q
+1 0 0 1 120.4724 636.5354 cm
+q
+.07451 .133333 .219608 rg
+n 0 126 354.3307 -18 re f*
+1 1 1 rg
+BT /F1 7 Tf 12 TL ET
+BT 1 0 0 1 6 116 Tm (Metric) Tj T* ET
+BT 1 0 0 1 232.7717 116 Tm (Median) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 6 98 Tm (return_on_equity_pct) Tj T* ET
+BT 1 0 0 1 232.7717 98 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 80 Tm (return_on_capital_employed_pct) Tj T* ET
+BT 1 0 0 1 232.7717 80 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 62 Tm (net_margin_pct) Tj T* ET
+BT 1 0 0 1 232.7717 62 Tm (14.82) Tj T* ET
+BT 1 0 0 1 6 44 Tm (debt_to_equity) Tj T* ET
+BT 1 0 0 1 232.7717 44 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 26 Tm (cagr_5y) Tj T* ET
+BT 1 0 0 1 232.7717 26 Tm (10.46) Tj T* ET
+BT 1 0 0 1 6 8 Tm (free_cash_flow) Tj T* ET
+BT 1 0 0 1 232.7717 8 Tm (nan) Tj T* ET
+q
+1 J
+1 j
+.827451 .827451 .827451 RG
+.25 w
+n 0 126 m 354.3307 126 l S
+n 0 0 m 354.3307 0 l S
+n 0 0 m 0 126 l S
+n 354.3307 0 m 354.3307 126 l S
+n 0 108 m 354.3307 108 l S
+n 0 90 m 354.3307 90 l S
+n 0 72 m 354.3307 72 l S
+n 0 54 m 354.3307 54 l S
+n 0 36 m 354.3307 36 l S
+n 0 18 m 354.3307 18 l S
+n 226.7717 0 m 226.7717 126 l S
+Q
+Q
+Q
+q
+1 0 0 1 40.01575 625.1969 cm
+Q
+q
+1 0 0 1 40.01575 595.1969 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Companies and latest available metrics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 52.44094 445.1969 cm
+q
+.07451 .133333 .219608 rg
+n 0 144 490.3937 -18 re f*
+1 1 1 rg
+BT /F1 6 Tf 12 TL ET
+BT 1 0 0 1 6 135 Tm (Ticker) Tj T* ET
+BT 1 0 0 1 62.69291 135 Tm (Company) Tj T* ET
+BT 1 0 0 1 227.1024 135 Tm (ROE) Tj T* ET
+BT 1 0 0 1 269.622 135 Tm (ROCE) Tj T* ET
+BT 1 0 0 1 312.1417 135 Tm (NPM) Tj T* ET
+BT 1 0 0 1 354.6614 135 Tm (D/E) Tj T* ET
+BT 1 0 0 1 397.1811 135 Tm (CAGR) Tj T* ET
+BT 1 0 0 1 439.7008 135 Tm (FCF) Tj T* ET
+0 0 0 rg
+BT 1 0 0 1 6 117 Tm (HCLTECH) Tj T* ET
+BT 1 0 0 1 62.69291 117 Tm (HCL Technologies Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 117 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 117 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 117 Tm (14.816838380684775) Tj T* ET
+BT 1 0 0 1 354.6614 117 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 117 Tm (12.710299978373406) Tj T* ET
+BT 1 0 0 1 439.7008 117 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 99 Tm (INFY) Tj T* ET
+BT 1 0 0 1 62.69291 99 Tm (Infosys Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 99 Tm (17.30567292546941) Tj T* ET
+BT 1 0 0 1 354.6614 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 99 Tm (13.199100930556229) Tj T* ET
+BT 1 0 0 1 439.7008 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 81 Tm (LODHA) Tj T* ET
+BT 1 0 0 1 62.69291 81 Tm (Macrotech Developers Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 81 Tm (18.498600265212907) Tj T* ET
+BT 1 0 0 1 354.6614 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 81 Tm (-2.8278535641862446) Tj T* ET
+BT 1 0 0 1 439.7008 81 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 63 Tm (TCS) Tj T* ET
+BT 1 0 0 1 62.69291 63 Tm (Tata Consultancy Services Lt) Tj T* ET
+BT 1 0 0 1 227.1024 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 63 Tm (19.440499519997463) Tj T* ET
+BT 1 0 0 1 354.6614 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 63 Tm (10.463614801716602) Tj T* ET
+BT 1 0 0 1 439.7008 63 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 45 Tm (TECHM) Tj T* ET
+BT 1 0 0 1 62.69291 45 Tm (Tech Mahindra Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 45 Tm (7.193764768656148) Tj T* ET
+BT 1 0 0 1 354.6614 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 45 Tm (8.398437919098868) Tj T* ET
+BT 1 0 0 1 439.7008 45 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 27 Tm (ULTRACEMCO) Tj T* ET
+BT 1 0 0 1 62.69291 27 Tm (UltraTech Cement Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 27 Tm (8.766493262475986) Tj T* ET
+BT 1 0 0 1 354.6614 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 27 Tm (11.329176790681373) Tj T* ET
+BT 1 0 0 1 439.7008 27 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 9 Tm (WIPRO) Tj T* ET
+BT 1 0 0 1 62.69291 9 Tm (Wipro Ltd) Tj T* ET
+BT 1 0 0 1 227.1024 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 9 Tm (14.064330119830615) Tj T* ET
+BT 1 0 0 1 354.6614 9 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 9 Tm (8.747228996316725) Tj T* ET
+BT 1 0 0 1 439.7008 9 Tm (nan) Tj T* ET
+q
+1 J
+1 j
+.827451 .827451 .827451 RG
+.2 w
+n 0 144 m 490.3937 144 l S
+n 0 0 m 490.3937 0 l S
+n 0 0 m 0 144 l S
+n 490.3937 0 m 490.3937 144 l S
+n 0 126 m 490.3937 126 l S
+n 0 108 m 490.3937 108 l S
+n 0 90 m 490.3937 90 l S
+n 0 72 m 490.3937 72 l S
+n 0 54 m 490.3937 54 l S
+n 0 36 m 490.3937 36 l S
+n 0 18 m 490.3937 18 l S
+n 56.69291 0 m 56.69291 144 l S
+n 221.1024 0 m 221.1024 144 l S
+n 263.622 0 m 263.622 144 l S
+n 306.1417 0 m 306.1417 144 l S
+n 348.6614 0 m 348.6614 144 l S
+n 391.1811 0 m 391.1811 144 l S
+n 433.7008 0 m 433.7008 144 l S
+Q
+Q
+Q
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000524 00000 n 
+0000000592 00000 n 
+0000000872 00000 n 
+0000000931 00000 n 
+trailer
+<<
+/ID 
+[<bc889d686187fdff6643153903629615><bc889d686187fdff6643153903629615>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+6011
+%%EOF
