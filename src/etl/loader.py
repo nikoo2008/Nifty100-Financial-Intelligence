@@ -24,7 +24,6 @@ tab-separated text files. This loader detects both formats.
 
 from __future__ import annotations
 
-import csv
 import logging
 import re
 import zipfile
@@ -38,18 +37,13 @@ from src.etl.normaliser import (
     normalize_year,
 )
 
-
 # ============================================================
 # PROJECT CONFIGURATION
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-RAW_DATA_DIR = (
-    PROJECT_ROOT
-    / "data"
-    / "raw"
-)
+RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
 
 LOGGER = logging.getLogger(__name__)
 
@@ -74,7 +68,6 @@ CORE_DATASETS = [
 # ============================================================
 
 DATASET_CONFIG: dict[str, dict[str, Any]] = {
-
     "companies": {
         "patterns": [
             "companies.xlsx",
@@ -90,7 +83,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
         "company_column": "id",
         "year_column": None,
     },
-
     "profitandloss": {
         "patterns": [
             "profitandloss.xlsx",
@@ -114,7 +106,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
         "company_column": "company_id",
         "year_column": "year",
     },
-
     "balancesheet": {
         "patterns": [
             "balancesheet.xlsx",
@@ -137,7 +128,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
         "company_column": "company_id",
         "year_column": "year",
     },
-
     "cashflow": {
         "patterns": [
             "cashflow.xlsx",
@@ -147,14 +137,13 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "company_id",
             "year",
             "operating_activity",
-"investing_activity",
-"financing_activity",
+            "investing_activity",
+            "financing_activity",
             "net_cash_flow",
         ],
         "company_column": "company_id",
         "year_column": "year",
     },
-
     "analysis": {
         "patterns": [
             "analysis.xlsx",
@@ -165,7 +154,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
         "company_column": "company_id",
         "year_column": None,
     },
-
     "documents": {
         "patterns": [
             "documents.xlsx",
@@ -176,7 +164,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
         "company_column": "company_id",
         "year_column": "year",
     },
-
     "prosandcons": {
         "patterns": [
             "prosandcons.xlsx",
@@ -208,7 +195,6 @@ COMPANY_ID_ALIASES = {
 # absent from the malformed companies source.
 
 MISSING_COMPANIES: dict[str, dict[str, str]] = {
-
     "AGTL": {
         "company_name": "Adani Green Energy Ltd",
         "company_logo": "",
@@ -216,7 +202,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "ULTRACEMCO": {
         "company_name": "UltraTech Cement Ltd",
         "company_logo": "",
@@ -224,7 +209,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "UNIONBANK": {
         "company_name": "Union Bank of India",
         "company_logo": "",
@@ -232,7 +216,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "UNITDSPR": {
         "company_name": "United Spirits Ltd",
         "company_logo": "",
@@ -240,7 +223,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "VBL": {
         "company_name": "Varun Beverages Ltd",
         "company_logo": "",
@@ -248,7 +230,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "VEDL": {
         "company_name": "Vedanta Ltd",
         "company_logo": "",
@@ -256,7 +237,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "WIPRO": {
         "company_name": "Wipro Ltd",
         "company_logo": "",
@@ -264,7 +244,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "ZOMATO": {
         "company_name": "Zomato Ltd",
         "company_logo": "",
@@ -272,7 +251,6 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
         "about_company": "",
         "website": "",
     },
-
     "ZYDUSLIFE": {
         "company_name": "Zydus Lifesciences Ltd",
         "company_logo": "",
@@ -286,6 +264,7 @@ MISSING_COMPANIES: dict[str, dict[str, str]] = {
 # ============================================================
 # COLUMN NORMALIZATION
 # ============================================================
+
 
 def normalize_column_name(
     column: object,
@@ -344,10 +323,7 @@ def normalize_dataframe_columns(
 
     result = dataframe.copy()
 
-    result.columns = [
-        normalize_column_name(column)
-        for column in result.columns
-    ]
+    result.columns = [normalize_column_name(column) for column in result.columns]
 
     return result
 
@@ -355,6 +331,7 @@ def normalize_dataframe_columns(
 # ============================================================
 # COMPANY ID NORMALIZATION
 # ============================================================
+
 
 def normalize_company_id(
     value: object,
@@ -387,9 +364,7 @@ def normalize_company_id(
     }:
         return "M&M"
 
-    normalized = normalize_ticker(
-        text
-    )
+    normalized = normalize_ticker(text)
 
     if normalized is None:
         return None
@@ -404,6 +379,7 @@ def normalize_company_id(
 # FILE TYPE DETECTION
 # ============================================================
 
+
 def is_real_excel_file(
     file_path: Path,
 ) -> bool:
@@ -412,22 +388,13 @@ def is_real_excel_file(
     """
 
     try:
-
-        if not zipfile.is_zipfile(
-            file_path
-        ):
+        if not zipfile.is_zipfile(file_path):
             return False
 
-        with zipfile.ZipFile(
-            file_path
-        ) as archive:
-
+        with zipfile.ZipFile(file_path) as archive:
             names = archive.namelist()
 
-            return (
-                "[Content_Types].xml"
-                in names
-            )
+            return "[Content_Types].xml" in names
 
     except (
         OSError,
@@ -440,6 +407,7 @@ def is_real_excel_file(
 # TEXT SOURCE HELPERS
 # ============================================================
 
+
 def read_source_lines(
     file_path: Path,
 ) -> list[str]:
@@ -448,26 +416,16 @@ def read_source_lines(
     """
 
     try:
-
-        return (
-            file_path
-            .read_text(
-                encoding="utf-8-sig",
-                errors="strict",
-            )
-            .splitlines()
-        )
+        return file_path.read_text(
+            encoding="utf-8-sig",
+            errors="strict",
+        ).splitlines()
 
     except UnicodeDecodeError:
-
-        return (
-            file_path
-            .read_text(
-                encoding="cp1252",
-                errors="replace",
-            )
-            .splitlines()
-        )
+        return file_path.read_text(
+            encoding="cp1252",
+            errors="replace",
+        ).splitlines()
 
 
 def detect_delimiter(
@@ -477,11 +435,7 @@ def detect_delimiter(
     Detect the most likely delimiter.
     """
 
-    sample = [
-        line
-        for line in lines
-        if line.strip()
-    ][:20]
+    sample = [line for line in lines if line.strip()][:20]
 
     if not sample:
         return "\t"
@@ -496,11 +450,7 @@ def detect_delimiter(
     scores: dict[str, int] = {}
 
     for delimiter in candidates:
-
-        score = sum(
-            line.count(delimiter)
-            for line in sample
-        )
+        score = sum(line.count(delimiter) for line in sample)
 
         scores[delimiter] = score
 
@@ -521,14 +471,9 @@ def find_header_row(
     Locate the actual dataset header row.
     """
 
-    required_columns = set(
-        DATASET_CONFIG[
-            dataset_name
-        ]["required_columns"]
-    )
+    required_columns = set(DATASET_CONFIG[dataset_name]["required_columns"])
 
     for index, line in enumerate(lines):
-
         stripped = line.strip()
 
         if not stripped:
@@ -537,24 +482,12 @@ def find_header_row(
         if delimiter not in stripped:
             continue
 
-        columns = [
-            normalize_column_name(
-                value
-            )
-            for value in stripped.split(
-                delimiter
-            )
-        ]
+        columns = [normalize_column_name(value) for value in stripped.split(delimiter)]
 
-        column_set = set(
-            columns
-        )
+        column_set = set(columns)
 
         # Exact schema match is best.
-        required_matches = len(
-            required_columns
-            & column_set
-        )
+        required_matches = len(required_columns & column_set)
 
         if required_matches >= min(
             2,
@@ -572,16 +505,11 @@ def find_header_row(
             return index
 
         # Supplementary datasets may only have company_id.
-        if (
-            "company_id"
-            in column_set
-            and len(columns) >= 2
-        ):
+        if "company_id" in column_set and len(columns) >= 2:
             return index
 
     raise ValueError(
-        f"Could not detect a valid header row "
-        f"for dataset '{dataset_name}'."
+        f"Could not detect a valid header row for dataset '{dataset_name}'."
     )
 
 
@@ -593,16 +521,12 @@ def read_text_source(
     Read a text/TSV source even when named .xlsx.
     """
 
-    lines = read_source_lines(
-        file_path
-    )
+    lines = read_source_lines(file_path)
 
     if not lines:
         return pd.DataFrame()
 
-    delimiter = detect_delimiter(
-        lines
-    )
+    delimiter = detect_delimiter(lines)
 
     header_row = find_header_row(
         lines,
@@ -611,44 +535,28 @@ def read_text_source(
     )
 
     header = [
-        normalize_column_name(
-            value
-        )
-        for value in lines[
-            header_row
-        ].split(delimiter)
+        normalize_column_name(value) for value in lines[header_row].split(delimiter)
     ]
 
     data_rows: list[list[str]] = []
 
-    for line in lines[
-        header_row + 1:
-    ]:
-
+    for line in lines[header_row + 1 :]:
         if not line.strip():
             continue
 
-        row = line.split(
-            delimiter
-        )
+        row = line.split(delimiter)
 
-        data_rows.append(
-            row
-        )
+        data_rows.append(row)
 
     max_columns = max(
         len(header),
         max(
-            (
-                len(row)
-                for row in data_rows
-            ),
+            (len(row) for row in data_rows),
             default=0,
         ),
     )
 
     if len(header) < max_columns:
-
         header.extend(
             [
                 f"extra_column_{index}"
@@ -662,23 +570,13 @@ def read_text_source(
     padded_rows = []
 
     for row in data_rows:
-
         if len(row) < len(header):
-
-            row = row + [
-                ""
-            ] * (
-                len(header)
-                - len(row)
-            )
+            row = row + [""] * (len(header) - len(row))
 
         elif len(row) > len(header):
+            row = row[: len(header)]
 
-            row = row[:len(header)]
-
-        padded_rows.append(
-            row
-        )
+        padded_rows.append(row)
 
     dataframe = pd.DataFrame(
         padded_rows,
@@ -692,6 +590,7 @@ def read_text_source(
 # SOURCE FILE READING
 # ============================================================
 
+
 def read_source_file(
     file_path: Path,
     dataset_name: str,
@@ -702,16 +601,9 @@ def read_source_file(
     """
 
     if not file_path.exists():
+        raise FileNotFoundError(f"Source file not found: {file_path}")
 
-        raise FileNotFoundError(
-            f"Source file not found: "
-            f"{file_path}"
-        )
-
-    if is_real_excel_file(
-        file_path
-    ):
-
+    if is_real_excel_file(file_path):
         LOGGER.info(
             "Reading Excel file: %s",
             file_path.name,
@@ -736,6 +628,7 @@ def read_source_file(
 # ============================================================
 # COMPANY DATA REPAIR HELPERS
 # ============================================================
+
 
 def is_probable_ticker(
     value: object,
@@ -770,10 +663,7 @@ def is_probable_ticker(
     ):
         return False
 
-    return any(
-        character.isalpha()
-        for character in text
-    )
+    return any(character.isalpha() for character in text)
 
 
 def is_url(
@@ -814,7 +704,6 @@ def append_text(
     left = ""
 
     if existing is not None:
-
         try:
             if not pd.isna(existing):
                 left = str(existing).strip()
@@ -824,7 +713,6 @@ def append_text(
     right = ""
 
     if addition is not None:
-
         try:
             if not pd.isna(addition):
                 right = str(addition).strip()
@@ -837,11 +725,7 @@ def append_text(
     if not right:
         return left
 
-    return (
-        left
-        + " "
-        + right
-    )
+    return left + " " + right
 
 
 def empty_company_record() -> dict[str, str]:
@@ -862,6 +746,7 @@ def empty_company_record() -> dict[str, str]:
 # ============================================================
 # COMPANY DATAFRAME REPAIR
 # ============================================================
+
 
 def repair_companies_dataframe(
     dataframe: pd.DataFrame,
@@ -889,22 +774,16 @@ def repair_companies_dataframe(
     result = dataframe.copy()
 
     for column in required_columns:
-
         if column not in result.columns:
             result[column] = ""
 
-    result = result[
-        required_columns
-    ].copy()
+    result = result[required_columns].copy()
 
-    repaired_records: list[
-        dict[str, str]
-    ] = []
+    repaired_records: list[dict[str, str]] = []
 
     current: dict[str, str] | None = None
 
     for _, row in result.iterrows():
-
         raw_id = row.get(
             "id",
             "",
@@ -918,23 +797,14 @@ def repair_companies_dataframe(
             for column in required_columns
         }
 
-        if is_probable_ticker(
-            raw_id
-        ):
-
+        if is_probable_ticker(raw_id):
             if current is not None:
-
-                repaired_records.append(
-                    current
-                )
+                repaired_records.append(current)
 
             current = empty_company_record()
 
             for column in required_columns:
-
-                value = raw_values[
-                    column
-                ]
+                value = raw_values[column]
 
                 if value is None:
                     value = ""
@@ -948,9 +818,7 @@ def repair_companies_dataframe(
                 ):
                     pass
 
-                current[column] = str(
-                    value
-                ).strip()
+                current[column] = str(value).strip()
 
             continue
 
@@ -961,35 +829,23 @@ def repair_companies_dataframe(
         fragment_id = ""
 
         if raw_id is not None:
-
             try:
                 if not pd.isna(raw_id):
-                    fragment_id = str(
-                        raw_id
-                    ).strip()
+                    fragment_id = str(raw_id).strip()
             except (
                 TypeError,
                 ValueError,
             ):
-                fragment_id = str(
-                    raw_id
-                ).strip()
+                fragment_id = str(raw_id).strip()
 
         if fragment_id:
-            current[
-                "about_company"
-            ] = append_text(
-                current[
-                    "about_company"
-                ],
+            current["about_company"] = append_text(
+                current["about_company"],
                 fragment_id,
             )
 
         for column in required_columns[1:]:
-
-            value = raw_values[
-                column
-            ]
+            value = raw_values[column]
 
             if value is None:
                 continue
@@ -1003,55 +859,32 @@ def repair_companies_dataframe(
             ):
                 pass
 
-            text = str(
-                value
-            ).strip()
+            text = str(value).strip()
 
             if not text:
                 continue
 
             if is_url(text):
+                if not current["website"]:
+                    current["website"] = text
 
-                if not current[
-                    "website"
-                ]:
-                    current[
-                        "website"
-                    ] = text
-
-                elif not current[
-                    "chart_link"
-                ]:
-                    current[
-                        "chart_link"
-                    ] = text
+                elif not current["chart_link"]:
+                    current["chart_link"] = text
 
                 else:
-                    current[
-                        "about_company"
-                    ] = append_text(
-                        current[
-                            "about_company"
-                        ],
+                    current["about_company"] = append_text(
+                        current["about_company"],
                         text,
                     )
 
             else:
-
-                current[
-                    "about_company"
-                ] = append_text(
-                    current[
-                        "about_company"
-                    ],
+                current["about_company"] = append_text(
+                    current["about_company"],
                     text,
                 )
 
     if current is not None:
-
-        repaired_records.append(
-            current
-        )
+        repaired_records.append(current)
 
     repaired = pd.DataFrame(
         repaired_records,
@@ -1059,22 +892,12 @@ def repair_companies_dataframe(
     )
 
     # Normalize IDs.
-    repaired["id"] = repaired[
-        "id"
-    ].apply(
-        normalize_company_id
-    )
+    repaired["id"] = repaired["id"].apply(normalize_company_id)
 
-    repaired = repaired[
-        repaired["id"].notna()
-    ].copy()
+    repaired = repaired[repaired["id"].notna()].copy()
 
     # Remove obvious malformed continuation IDs.
-    repaired = repaired[
-        repaired["id"].apply(
-            is_probable_ticker
-        )
-    ].copy()
+    repaired = repaired[repaired["id"].apply(is_probable_ticker)].copy()
 
     # Remove duplicate company IDs.
     repaired = repaired.drop_duplicates(
@@ -1082,9 +905,7 @@ def repair_companies_dataframe(
         keep="first",
     )
 
-    repaired = repaired.reset_index(
-        drop=True
-    )
+    repaired = repaired.reset_index(drop=True)
 
     return repaired
 
@@ -1092,6 +913,7 @@ def repair_companies_dataframe(
 # ============================================================
 # ADD MISSING COMPANY RECORDS
 # ============================================================
+
 
 def add_missing_company_records(
     dataframe: pd.DataFrame,
@@ -1103,53 +925,30 @@ def add_missing_company_records(
 
     result = dataframe.copy()
 
-    existing_ids = set(
-        result["id"]
-        .dropna()
-        .astype(str)
-        .str.strip()
-    )
+    existing_ids = set(result["id"].dropna().astype(str).str.strip())
 
     new_records = []
 
-    for company_id, metadata in (
-        MISSING_COMPANIES.items()
-    ):
-
+    for company_id, metadata in MISSING_COMPANIES.items():
         if company_id in existing_ids:
             continue
 
         record = {
             "id": company_id,
-            "company_logo": metadata[
-                "company_logo"
-            ],
-            "company_name": metadata[
-                "company_name"
-            ],
-            "chart_link": metadata[
-                "chart_link"
-            ],
-            "about_company": metadata[
-                "about_company"
-            ],
-            "website": metadata[
-                "website"
-            ],
+            "company_logo": metadata["company_logo"],
+            "company_name": metadata["company_name"],
+            "chart_link": metadata["chart_link"],
+            "about_company": metadata["about_company"],
+            "website": metadata["website"],
         }
 
-        new_records.append(
-            record
-        )
+        new_records.append(record)
 
     if new_records:
-
         result = pd.concat(
             [
                 result,
-                pd.DataFrame(
-                    new_records
-                ),
+                pd.DataFrame(new_records),
             ],
             ignore_index=True,
         )
@@ -1161,6 +960,7 @@ def add_missing_company_records(
 # FILE DISCOVERY
 # ============================================================
 
+
 def find_dataset_file(
     dataset_name: str,
 ) -> Path:
@@ -1169,37 +969,25 @@ def find_dataset_file(
     """
 
     if dataset_name not in DATASET_CONFIG:
+        raise KeyError(f"Unknown dataset: {dataset_name}")
 
-        raise KeyError(
-            f"Unknown dataset: "
-            f"{dataset_name}"
-        )
-
-    patterns = DATASET_CONFIG[
-        dataset_name
-    ]["patterns"]
+    patterns = DATASET_CONFIG[dataset_name]["patterns"]
 
     for pattern in patterns:
-
-        matches = sorted(
-            RAW_DATA_DIR.glob(
-                pattern
-            )
-        )
+        matches = sorted(RAW_DATA_DIR.glob(pattern))
 
         if matches:
             return matches[0]
 
     raise FileNotFoundError(
-        f"Could not find source file for "
-        f"dataset '{dataset_name}' in "
-        f"{RAW_DATA_DIR}"
+        f"Could not find source file for dataset '{dataset_name}' in {RAW_DATA_DIR}"
     )
 
 
 # ============================================================
 # COLUMN VALIDATION
 # ============================================================
+
 
 def validate_columns(
     dataframe: pd.DataFrame,
@@ -1209,22 +997,13 @@ def validate_columns(
     Ensure all required columns exist.
     """
 
-    required = set(
-        DATASET_CONFIG[
-            dataset_name
-        ]["required_columns"]
-    )
+    required = set(DATASET_CONFIG[dataset_name]["required_columns"])
 
-    actual = set(
-        dataframe.columns
-    )
+    actual = set(dataframe.columns)
 
-    missing = sorted(
-        required - actual
-    )
+    missing = sorted(required - actual)
 
     if missing:
-
         raise ValueError(
             f"Dataset '{dataset_name}' is "
             f"missing required columns: "
@@ -1238,6 +1017,7 @@ def validate_columns(
 # DATASET NORMALIZATION
 # ============================================================
 
+
 def normalize_dataset(
     dataframe: pd.DataFrame,
     dataset_name: str,
@@ -1248,53 +1028,25 @@ def normalize_dataset(
 
     result = dataframe.copy()
 
-    config = DATASET_CONFIG[
-        dataset_name
-    ]
+    config = DATASET_CONFIG[dataset_name]
 
-    company_column = config[
-        "company_column"
-    ]
+    company_column = config["company_column"]
 
-    year_column = config[
-        "year_column"
-    ]
+    year_column = config["year_column"]
 
     # --------------------------------------------------------
     # Company ID
     # --------------------------------------------------------
 
-    if (
-        company_column
-        and company_column
-        in result.columns
-    ):
-
-        result[
-            company_column
-        ] = result[
-            company_column
-        ].apply(
-            normalize_company_id
-        )
+    if company_column and company_column in result.columns:
+        result[company_column] = result[company_column].apply(normalize_company_id)
 
     # --------------------------------------------------------
     # Year
     # --------------------------------------------------------
 
-    if (
-        year_column
-        and year_column
-        in result.columns
-    ):
-
-        result[
-            year_column
-        ] = result[
-            year_column
-        ].apply(
-            normalize_year
-        )
+    if year_column and year_column in result.columns:
+        result[year_column] = result[year_column].apply(normalize_year)
 
     # --------------------------------------------------------
     # Convert common empty text values to missing values
@@ -1317,15 +1069,7 @@ def normalize_dataset(
     # Remove completely empty rows
     # --------------------------------------------------------
 
-    result = (
-        result
-        .dropna(
-            how="all"
-        )
-        .reset_index(
-            drop=True
-        )
-    )
+    result = result.dropna(how="all").reset_index(drop=True)
 
     return result
 
@@ -1333,6 +1077,7 @@ def normalize_dataset(
 # ============================================================
 # LOAD ONE DATASET
 # ============================================================
+
 
 def load_excel(
     path: Path,
@@ -1353,20 +1098,13 @@ def load_excel(
         dataset_name,
     )
 
-    dataframe = normalize_dataframe_columns(
-        dataframe
-    )
+    dataframe = normalize_dataframe_columns(dataframe)
 
     # Companies requires special repair BEFORE validation.
     if dataset_name == "companies":
+        dataframe = repair_companies_dataframe(dataframe)
 
-        dataframe = repair_companies_dataframe(
-            dataframe
-        )
-
-        dataframe = add_missing_company_records(
-            dataframe
-        )
+        dataframe = add_missing_company_records(dataframe)
 
     validate_columns(
         dataframe,
@@ -1380,15 +1118,12 @@ def load_excel(
 
     # Final companies cleanup.
     if dataset_name == "companies":
-
         dataframe = dataframe.drop_duplicates(
             subset=["id"],
             keep="first",
         )
 
-        dataframe = dataframe.reset_index(
-            drop=True
-        )
+        dataframe = dataframe.reset_index(drop=True)
 
     LOGGER.info(
         "Dataset '%s' ready: %d rows, %d columns",
@@ -1404,6 +1139,7 @@ def load_excel(
 # BACKWARD COMPATIBILITY
 # ============================================================
 
+
 def load_dataset(
     dataset_name: str,
 ) -> pd.DataFrame:
@@ -1411,9 +1147,7 @@ def load_dataset(
     Load a single named dataset.
     """
 
-    path = find_dataset_file(
-        dataset_name
-    )
+    path = find_dataset_file(dataset_name)
 
     return load_excel(
         path,
@@ -1424,6 +1158,7 @@ def load_dataset(
 # ============================================================
 # LOAD ALL CORE DATASETS
 # ============================================================
+
 
 def load_all_core_datasets() -> dict[
     str,
@@ -1439,12 +1174,7 @@ def load_all_core_datasets() -> dict[
     ] = {}
 
     for dataset_name in CORE_DATASETS:
-
-        datasets[
-            dataset_name
-        ] = load_dataset(
-            dataset_name
-        )
+        datasets[dataset_name] = load_dataset(dataset_name)
 
     return datasets
 
@@ -1452,6 +1182,7 @@ def load_all_core_datasets() -> dict[
 # ============================================================
 # DATASET SUMMARY
 # ============================================================
+
 
 def create_dataset_summary(
     datasets: dict[
@@ -1465,36 +1196,23 @@ def create_dataset_summary(
 
     rows = []
 
-    for dataset_name, dataframe in (
-        datasets.items()
-    ):
-
+    for dataset_name, dataframe in datasets.items():
         rows.append(
             {
                 "dataset": dataset_name,
-                "rows": len(
-                    dataframe
-                ),
-                "columns": len(
-                    dataframe.columns
-                ),
-                "missing_cells": int(
-                    dataframe
-                    .isna()
-                    .sum()
-                    .sum()
-                ),
+                "rows": len(dataframe),
+                "columns": len(dataframe.columns),
+                "missing_cells": int(dataframe.isna().sum().sum()),
             }
         )
 
-    return pd.DataFrame(
-        rows
-    )
+    return pd.DataFrame(rows)
 
 
 # ============================================================
 # MAIN
 # ============================================================
+
 
 def main() -> None:
     """
@@ -1503,12 +1221,7 @@ def main() -> None:
 
     logging.basicConfig(
         level=logging.INFO,
-        format=(
-            "%(asctime)s | "
-            "%(levelname)s | "
-            "%(name)s | "
-            "%(message)s"
-        ),
+        format=("%(asctime)s | %(levelname)s | %(name)s | %(message)s"),
     )
 
     print()
@@ -1519,21 +1232,12 @@ def main() -> None:
 
     datasets = load_all_core_datasets()
 
-    summary = create_dataset_summary(
-        datasets
-    )
+    summary = create_dataset_summary(datasets)
 
-    print(
-        summary.to_string(
-            index=False
-        )
-    )
+    print(summary.to_string(index=False))
 
     print()
-    print(
-        f"Successfully loaded "
-        f"{len(datasets)} core datasets."
-    )
+    print(f"Successfully loaded {len(datasets)} core datasets.")
 
 
 if __name__ == "__main__":

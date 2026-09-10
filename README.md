@@ -63,3 +63,19 @@ python -m src.reports.portfolio_report
 ```
 
 The source universe contains 101 companies. `AGTL` is logged in `output/skipped_tearsheets.csv` because it has fewer than three P&L years; 100 two-page tearsheets and 11 sector reports are generated. NLP output uses confidence-filtered, transparent rules and includes a minimum evidence/fallback signal for companies with incomplete source histories.
+
+## Sprint 6 clustering, API, and sign-off
+
+Generate the clustering artifacts with:
+
+```powershell
+python -m src.analytics.clustering
+```
+
+Start the API with:
+
+```powershell
+uvicorn src.api.main:app --port 8000
+```
+
+The API exposes 16 read-only endpoints under `/api/v1`, with Swagger at `/docs`. OpenAPI and Postman exports are written to `docs/openapi.json` and `docs/postman_collection.json`. Run `pytest` for the complete regression suite. Acceptance results are recorded in `output/acceptance_gates.csv`; source-universe exceptions are reported as FAIL rather than hidden.

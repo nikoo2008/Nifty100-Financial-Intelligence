@@ -8,7 +8,6 @@ Day 02 requirements:
 
 from src.etl.normaliser import normalize_ticker, normalize_year
 
-
 # ============================================================
 # normalize_year — 20 tests
 # ============================================================

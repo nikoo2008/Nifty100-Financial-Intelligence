@@ -14,7 +14,6 @@ from typing import Any
 
 import pandas as pd
 
-
 # ============================================================
 # PROJECT PATHS
 # ============================================================
@@ -23,9 +22,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 REPORTS_DIR = PROJECT_ROOT / "reports"
 
-FAILURE_REPORT = (
-    REPORTS_DIR / "validation_failures.csv"
-)
+FAILURE_REPORT = REPORTS_DIR / "validation_failures.csv"
 
 
 # ============================================================
@@ -48,7 +45,6 @@ FAILURE_COLUMNS = [
 # ============================================================
 
 REQUIRED_COLUMNS: dict[str, list[str]] = {
-
     "companies": [
         "id",
         "company_logo",
@@ -57,7 +53,6 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
         "about_company",
         "website",
     ],
-
     "profitandloss": [
         "id",
         "company_id",
@@ -75,7 +70,6 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
         "eps",
         "dividend_payout",
     ],
-
     "balancesheet": [
         "id",
         "company_id",
@@ -91,7 +85,6 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
         "other_asset",
         "total_assets",
     ],
-
     "cashflow": [
         "id",
         "company_id",
@@ -101,7 +94,6 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
         "financing_activity",
         "net_cash_flow",
     ],
-
     "analysis": [
         "id",
         "company_id",
@@ -110,14 +102,12 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
         "stock_price_cagr",
         "roe",
     ],
-
     "documents": [
         "id",
         "company_id",
         "year",
         "annual_report",
     ],
-
     "prosandcons": [
         "id",
         "company_id",
@@ -132,7 +122,6 @@ REQUIRED_COLUMNS: dict[str, list[str]] = {
 # ============================================================
 
 NUMERIC_COLUMNS: dict[str, list[str]] = {
-
     "profitandloss": [
         "sales",
         "expenses",
@@ -147,7 +136,6 @@ NUMERIC_COLUMNS: dict[str, list[str]] = {
         "eps",
         "dividend_payout",
     ],
-
     "balancesheet": [
         "equity_capital",
         "reserves",
@@ -160,14 +148,12 @@ NUMERIC_COLUMNS: dict[str, list[str]] = {
         "other_asset",
         "total_assets",
     ],
-
     "cashflow": [
         "operating_activity",
         "investing_activity",
         "financing_activity",
         "net_cash_flow",
     ],
-
     "analysis": [
         "compounded_sales_growth",
         "compounded_profit_growth",
@@ -182,13 +168,11 @@ NUMERIC_COLUMNS: dict[str, list[str]] = {
 # ============================================================
 
 PERCENTAGE_COLUMNS: dict[str, list[str]] = {
-
     "profitandloss": [
         "opm_percentage",
         "tax_percentage",
         "dividend_payout",
     ],
-
     "analysis": [
         "compounded_sales_growth",
         "compounded_profit_growth",
@@ -201,6 +185,7 @@ PERCENTAGE_COLUMNS: dict[str, list[str]] = {
 # ============================================================
 # HELPER: ADD FAILURE
 # ============================================================
+
 
 def _add_failure(
     failures: list[dict[str, Any]],
@@ -230,6 +215,7 @@ def _add_failure(
 # HELPER: MISSING VALUE
 # ============================================================
 
+
 def _is_missing(value: Any) -> bool:
 
     if value is None:
@@ -251,6 +237,7 @@ def _is_missing(value: Any) -> bool:
 # HELPER: NUMERIC CONVERSION
 # ============================================================
 
+
 def _to_numeric(
     value: Any,
 ) -> float | None:
@@ -262,9 +249,7 @@ def _to_numeric(
         return None
 
     if isinstance(value, (int, float)):
-
         try:
-
             number = float(value)
 
             if pd.isna(number):
@@ -273,7 +258,6 @@ def _to_numeric(
             return number
 
         except (TypeError, ValueError):
-
             return None
 
     text = str(value).strip()
@@ -289,18 +273,13 @@ def _to_numeric(
     # Accounting format:
     # (123.45) -> -123.45
 
-    if (
-        text.startswith("(")
-        and text.endswith(")")
-    ):
+    if text.startswith("(") and text.endswith(")"):
         text = "-" + text[1:-1].strip()
 
     try:
-
         return float(text)
 
     except ValueError:
-
         return None
 
 
@@ -308,6 +287,7 @@ def _to_numeric(
 # RULE 1
 # REQUIRED COLUMNS
 # ============================================================
+
 
 def validate_required_columns(
     dataset: str,
@@ -324,22 +304,16 @@ def validate_required_columns(
 
     actual = set(df.columns)
 
-    missing = sorted(
-        required - actual
-    )
+    missing = sorted(required - actual)
 
     for column in missing:
-
         _add_failure(
             failures,
             dataset,
             "REQUIRED_COLUMN",
             "CRITICAL",
             column=column,
-            message=(
-                f"Required column '{column}' "
-                "is missing."
-            ),
+            message=(f"Required column '{column}' is missing."),
         )
 
 
@@ -348,6 +322,7 @@ def validate_required_columns(
 # DATASET MUST NOT BE EMPTY
 # ============================================================
 
+
 def validate_not_empty(
     dataset: str,
     df: pd.DataFrame,
@@ -355,15 +330,12 @@ def validate_not_empty(
 ) -> None:
 
     if df.empty:
-
         _add_failure(
             failures,
             dataset,
             "NON_EMPTY_DATASET",
             "CRITICAL",
-            message=(
-                "Dataset contains zero rows."
-            ),
+            message=("Dataset contains zero rows."),
         )
 
 
@@ -371,6 +343,7 @@ def validate_not_empty(
 # RULE 3
 # ID MUST NOT BE NULL
 # ============================================================
+
 
 def validate_id(
     dataset: str,
@@ -382,12 +355,7 @@ def validate_id(
         return
 
     for index, value in df["id"].items():
-
-        if (
-            _is_missing(value)
-            or not str(value).strip()
-        ):
-
+        if _is_missing(value) or not str(value).strip():
             _add_failure(
                 failures,
                 dataset,
@@ -396,9 +364,7 @@ def validate_id(
                 row=index,
                 column="id",
                 value=value,
-                message=(
-                    "ID cannot be null or empty."
-                ),
+                message=("ID cannot be null or empty."),
             )
 
 
@@ -406,6 +372,7 @@ def validate_id(
 # RULE 4
 # ID MUST BE UNIQUE
 # ============================================================
+
 
 def validate_unique_id(
     dataset: str,
@@ -422,19 +389,11 @@ def validate_unique_id(
     if "id" not in df.columns:
         return
 
-    valid_ids = df[
-        df["id"].notna()
-        & df["id"].astype(str).str.strip().ne("")
-    ]
+    valid_ids = df[df["id"].notna() & df["id"].astype(str).str.strip().ne("")]
 
-    duplicated = valid_ids[
-        valid_ids["id"].duplicated(
-            keep=False
-        )
-    ]
+    duplicated = valid_ids[valid_ids["id"].duplicated(keep=False)]
 
     for index, value in duplicated["id"].items():
-
         _add_failure(
             failures,
             dataset,
@@ -443,10 +402,7 @@ def validate_unique_id(
             row=index,
             column="id",
             value=value,
-            message=(
-                f"Duplicate non-null ID detected: "
-                f"{value}"
-            ),
+            message=(f"Duplicate non-null ID detected: {value}"),
         )
 
 
@@ -454,6 +410,7 @@ def validate_unique_id(
 # RULE 5
 # COMPANY ID MUST NOT BE NULL
 # ============================================================
+
 
 def validate_company_id_not_null(
     dataset: str,
@@ -464,15 +421,8 @@ def validate_company_id_not_null(
     if "company_id" not in df.columns:
         return
 
-    for index, value in df[
-        "company_id"
-    ].items():
-
-        if (
-            _is_missing(value)
-            or not str(value).strip()
-        ):
-
+    for index, value in df["company_id"].items():
+        if _is_missing(value) or not str(value).strip():
             _add_failure(
                 failures,
                 dataset,
@@ -481,10 +431,7 @@ def validate_company_id_not_null(
                 row=index,
                 column="company_id",
                 value=value,
-                message=(
-                    "company_id cannot be "
-                    "null or empty."
-                ),
+                message=("company_id cannot be null or empty."),
             )
 
 
@@ -492,6 +439,7 @@ def validate_company_id_not_null(
 # RULE 6
 # YEAR MUST NOT BE NULL
 # ============================================================
+
 
 def validate_year_not_null(
     dataset: str,
@@ -502,12 +450,8 @@ def validate_year_not_null(
     if "year" not in df.columns:
         return
 
-    for index, value in df[
-        "year"
-    ].items():
-
+    for index, value in df["year"].items():
         if _is_missing(value):
-
             _add_failure(
                 failures,
                 dataset,
@@ -516,9 +460,7 @@ def validate_year_not_null(
                 row=index,
                 column="year",
                 value=value,
-                message=(
-                    "Year cannot be null."
-                ),
+                message=("Year cannot be null."),
             )
 
 
@@ -526,6 +468,7 @@ def validate_year_not_null(
 # RULE 7
 # YEAR RANGE
 # ============================================================
+
 
 def validate_year_range(
     dataset: str,
@@ -536,17 +479,13 @@ def validate_year_range(
     if "year" not in df.columns:
         return
 
-    for index, value in df[
-        "year"
-    ].items():
-
+    for index, value in df["year"].items():
         if _is_missing(value):
             continue
 
         numeric = _to_numeric(value)
 
         if numeric is None:
-
             _add_failure(
                 failures,
                 dataset,
@@ -555,9 +494,7 @@ def validate_year_range(
                 row=index,
                 column="year",
                 value=value,
-                message=(
-                    "Year is not a valid number."
-                ),
+                message=("Year is not a valid number."),
             )
 
             continue
@@ -565,7 +502,6 @@ def validate_year_range(
         year = int(numeric)
 
         if not 1900 <= year <= 2100:
-
             _add_failure(
                 failures,
                 dataset,
@@ -574,10 +510,7 @@ def validate_year_range(
                 row=index,
                 column="year",
                 value=value,
-                message=(
-                    f"Year {year} is outside "
-                    "the valid range 1900-2100."
-                ),
+                message=(f"Year {year} is outside the valid range 1900-2100."),
             )
 
 
@@ -585,6 +518,7 @@ def validate_year_range(
 # RULE 8
 # NUMERIC VALUES
 # ============================================================
+
 
 def validate_numeric_columns(
     dataset: str,
@@ -598,21 +532,16 @@ def validate_numeric_columns(
     )
 
     for column in columns:
-
         if column not in df.columns:
             continue
 
-        for index, value in df[
-            column
-        ].items():
-
+        for index, value in df[column].items():
             if _is_missing(value):
                 continue
 
             numeric = _to_numeric(value)
 
             if numeric is None:
-
                 _add_failure(
                     failures,
                     dataset,
@@ -621,9 +550,7 @@ def validate_numeric_columns(
                     row=index,
                     column=column,
                     value=value,
-                    message=(
-                        "Value must be numeric."
-                    ),
+                    message=("Value must be numeric."),
                 )
 
 
@@ -631,6 +558,7 @@ def validate_numeric_columns(
 # RULE 9
 # PERCENTAGE RANGE
 # ============================================================
+
 
 def validate_percentage_range(
     dataset: str,
@@ -653,14 +581,10 @@ def validate_percentage_range(
     )
 
     for column in columns:
-
         if column not in df.columns:
             continue
 
-        for index, value in df[
-            column
-        ].items():
-
+        for index, value in df[column].items():
             if _is_missing(value):
                 continue
 
@@ -670,7 +594,6 @@ def validate_percentage_range(
                 continue
 
             if abs(numeric) > 100:
-
                 _add_failure(
                     failures,
                     dataset,
@@ -679,10 +602,7 @@ def validate_percentage_range(
                     row=index,
                     column=column,
                     value=value,
-                    message=(
-                        "Percentage value must "
-                        "be between -100 and 100."
-                    ),
+                    message=("Percentage value must be between -100 and 100."),
                 )
 
 
@@ -690,6 +610,7 @@ def validate_percentage_range(
 # RULE 10
 # COMPANY/YEAR DUPLICATES
 # ============================================================
+
 
 def validate_company_year_duplicates(
     dataset: str,
@@ -703,10 +624,7 @@ def validate_company_year_duplicates(
     if "year" not in df.columns:
         return
 
-    valid = df[
-        df["company_id"].notna()
-        & df["year"].notna()
-    ].copy()
+    valid = df[df["company_id"].notna() & df["year"].notna()].copy()
 
     if valid.empty:
         return
@@ -722,7 +640,6 @@ def validate_company_year_duplicates(
     ]
 
     for index, row in duplicated.iterrows():
-
         _add_failure(
             failures,
             dataset,
@@ -730,14 +647,8 @@ def validate_company_year_duplicates(
             "ERROR",
             row=index,
             column="company_id,year",
-            value=(
-                f"{row['company_id']},"
-                f"{row['year']}"
-            ),
-            message=(
-                "Duplicate company/year "
-                "record detected."
-            ),
+            value=(f"{row['company_id']},{row['year']}"),
+            message=("Duplicate company/year record detected."),
         )
 
 
@@ -745,6 +656,7 @@ def validate_company_year_duplicates(
 # RULE 11
 # EPS MUST BE NUMERIC
 # ============================================================
+
 
 def validate_eps(
     dataset: str,
@@ -764,17 +676,13 @@ def validate_eps(
     if "eps" not in df.columns:
         return
 
-    for index, value in df[
-        "eps"
-    ].items():
-
+    for index, value in df["eps"].items():
         if _is_missing(value):
             continue
 
         numeric = _to_numeric(value)
 
         if numeric is None:
-
             _add_failure(
                 failures,
                 dataset,
@@ -783,9 +691,7 @@ def validate_eps(
                 row=index,
                 column="eps",
                 value=value,
-                message=(
-                    "EPS must be numeric."
-                ),
+                message=("EPS must be numeric."),
             )
 
 
@@ -793,6 +699,7 @@ def validate_eps(
 # RULE 12
 # BALANCE SHEET CONSISTENCY
 # ============================================================
+
 
 def validate_balance_sheet(
     dataset: str,
@@ -808,49 +715,27 @@ def validate_balance_sheet(
         "total_liabilities",
     }
 
-    if not required.issubset(
-        df.columns
-    ):
+    if not required.issubset(df.columns):
         return
 
     for index, row in df.iterrows():
+        assets = _to_numeric(row["total_assets"])
 
-        assets = _to_numeric(
-            row["total_assets"]
-        )
+        liabilities = _to_numeric(row["total_liabilities"])
 
-        liabilities = _to_numeric(
-            row["total_liabilities"]
-        )
-
-        if (
-            assets is None
-            or liabilities is None
-        ):
+        if assets is None or liabilities is None:
             continue
 
-        if abs(
-            assets - liabilities
-        ) > 0.01:
-
+        if abs(assets - liabilities) > 0.01:
             _add_failure(
                 failures,
                 dataset,
                 "BALANCE_SHEET_BALANCED",
                 "WARNING",
                 row=index,
-                column=(
-                    "total_assets,"
-                    "total_liabilities"
-                ),
-                value=(
-                    f"{assets},"
-                    f"{liabilities}"
-                ),
-                message=(
-                    "Total assets and total "
-                    "liabilities do not match."
-                ),
+                column=("total_assets,total_liabilities"),
+                value=(f"{assets},{liabilities}"),
+                message=("Total assets and total liabilities do not match."),
             )
 
 
@@ -858,6 +743,7 @@ def validate_balance_sheet(
 # RULE 13
 # URL FORMAT
 # ============================================================
+
 
 def validate_urls(
     dataset: str,
@@ -872,14 +758,10 @@ def validate_urls(
     ]
 
     for column in url_columns:
-
         if column not in df.columns:
             continue
 
-        for index, value in df[
-            column
-        ].items():
-
+        for index, value in df[column].items():
             if _is_missing(value):
                 continue
 
@@ -888,15 +770,7 @@ def validate_urls(
             if not text:
                 continue
 
-            if not (
-                text.startswith(
-                    "http://"
-                )
-                or text.startswith(
-                    "https://"
-                )
-            ):
-
+            if not (text.startswith(("http://", "https://"))):
                 _add_failure(
                     failures,
                     dataset,
@@ -905,10 +779,7 @@ def validate_urls(
                     row=index,
                     column=column,
                     value=value,
-                    message=(
-                        "URL should start with "
-                        "http:// or https://."
-                    ),
+                    message=("URL should start with http:// or https://."),
                 )
 
 
@@ -917,6 +788,7 @@ def validate_urls(
 # REQUIRED TEXT
 # ============================================================
 
+
 def validate_text_fields(
     dataset: str,
     df: pd.DataFrame,
@@ -924,38 +796,26 @@ def validate_text_fields(
 ) -> None:
 
     required_text_columns = {
-
         "companies": [
             "company_name",
         ],
-
         "prosandcons": [
             "pros",
             "cons",
         ],
     }
 
-    columns = (
-        required_text_columns.get(
-            dataset,
-            [],
-        )
+    columns = required_text_columns.get(
+        dataset,
+        [],
     )
 
     for column in columns:
-
         if column not in df.columns:
             continue
 
-        for index, value in df[
-            column
-        ].items():
-
-            if (
-                _is_missing(value)
-                or not str(value).strip()
-            ):
-
+        for index, value in df[column].items():
+            if _is_missing(value) or not str(value).strip():
                 _add_failure(
                     failures,
                     dataset,
@@ -964,10 +824,7 @@ def validate_text_fields(
                     row=index,
                     column=column,
                     value=value,
-                    message=(
-                        f"Text field '{column}' "
-                        "is empty."
-                    ),
+                    message=(f"Text field '{column}' is empty."),
                 )
 
 
@@ -975,6 +832,7 @@ def validate_text_fields(
 # RULE 15
 # COMPANY FOREIGN KEY
 # ============================================================
+
 
 def validate_company_references(
     datasets: dict[str, pd.DataFrame],
@@ -984,52 +842,29 @@ def validate_company_references(
     if "companies" not in datasets:
         return
 
-    companies = datasets[
-        "companies"
-    ]
+    companies = datasets["companies"]
 
     if "id" not in companies.columns:
         return
 
-    valid_ids = set(
-        companies["id"]
-        .dropna()
-        .astype(str)
-        .str.strip()
-        .str.upper()
-    )
+    valid_ids = set(companies["id"].dropna().astype(str).str.strip().str.upper())
 
     child_datasets = [
         name
         for name, df in datasets.items()
-        if (
-            name != "companies"
-            and "company_id" in df.columns
-        )
+        if (name != "companies" and "company_id" in df.columns)
     ]
 
     for dataset in child_datasets:
-
         df = datasets[dataset]
 
-        for index, value in df[
-            "company_id"
-        ].items():
-
-            if (
-                _is_missing(value)
-                or not str(value).strip()
-            ):
+        for index, value in df["company_id"].items():
+            if _is_missing(value) or not str(value).strip():
                 continue
 
-            company_id = (
-                str(value)
-                .strip()
-                .upper()
-            )
+            company_id = str(value).strip().upper()
 
             if company_id not in valid_ids:
-
                 _add_failure(
                     failures,
                     dataset,
@@ -1038,11 +873,7 @@ def validate_company_references(
                     row=index,
                     column="company_id",
                     value=value,
-                    message=(
-                        f"company_id '{value}' "
-                        "does not exist in "
-                        "companies.id."
-                    ),
+                    message=(f"company_id '{value}' does not exist in companies.id."),
                 )
 
 
@@ -1050,6 +881,7 @@ def validate_company_references(
 # RULE 16
 # UNEXPECTED COLUMNS
 # ============================================================
+
 
 def validate_unexpected_columns(
     dataset: str,
@@ -1067,28 +899,23 @@ def validate_unexpected_columns(
     if not expected:
         return
 
-    unexpected = sorted(
-        set(df.columns) - expected
-    )
+    unexpected = sorted(set(df.columns) - expected)
 
     for column in unexpected:
-
         _add_failure(
             failures,
             dataset,
             "UNEXPECTED_COLUMN",
             "WARNING",
             column=column,
-            message=(
-                f"Unexpected column detected: "
-                f"'{column}'."
-            ),
+            message=(f"Unexpected column detected: '{column}'."),
         )
 
 
 # ============================================================
 # DATASET VALIDATION
 # ============================================================
+
 
 def validate_dataset(
     dataset: str,
@@ -1098,9 +925,7 @@ def validate_dataset(
     Validate one dataset.
     """
 
-    failures: list[
-        dict[str, Any]
-    ] = []
+    failures: list[dict[str, Any]] = []
 
     validate_required_columns(
         dataset,
@@ -1199,6 +1024,7 @@ def validate_dataset(
 # ALL DATASETS
 # ============================================================
 
+
 def validate_all_datasets(
     datasets: dict[str, pd.DataFrame],
 ) -> pd.DataFrame:
@@ -1206,12 +1032,9 @@ def validate_all_datasets(
     Validate all seven datasets.
     """
 
-    failures: list[
-        dict[str, Any]
-    ] = []
+    failures: list[dict[str, Any]] = []
 
     for dataset, df in datasets.items():
-
         failures.extend(
             validate_dataset(
                 dataset,
@@ -1233,6 +1056,7 @@ def validate_all_datasets(
 # ============================================================
 # SAVE REPORT
 # ============================================================
+
 
 def save_validation_report(
     failures: pd.DataFrame,
@@ -1256,6 +1080,7 @@ def save_validation_report(
 # MAIN
 # ============================================================
 
+
 def main() -> None:
 
     from src.etl.loader import (
@@ -1264,35 +1089,22 @@ def main() -> None:
 
     print()
     print("=" * 60)
-    print(
-        "NIFTY 100 - DAY 03 "
-        "DATA QUALITY VALIDATION"
-    )
+    print("NIFTY 100 - DAY 03 DATA QUALITY VALIDATION")
     print("=" * 60)
     print()
 
     print("Loading datasets...")
 
-    datasets = (
-        load_all_core_datasets()
-    )
+    datasets = load_all_core_datasets()
 
-    print(
-        f"Loaded {len(datasets)} datasets."
-    )
+    print(f"Loaded {len(datasets)} datasets.")
 
     print()
     print("Running validation...")
 
-    failures = (
-        validate_all_datasets(
-            datasets
-        )
-    )
+    failures = validate_all_datasets(datasets)
 
-    save_validation_report(
-        failures
-    )
+    save_validation_report(failures)
 
     print()
     print("=" * 60)
@@ -1300,25 +1112,18 @@ def main() -> None:
     print("=" * 60)
 
     if failures.empty:
-
         print("STATUS   : PASSED")
         print("FAILURES : 0")
 
     else:
+        print("STATUS   : ISSUES FOUND")
 
-        print(
-            "STATUS   : ISSUES FOUND"
-        )
-
-        print(
-            f"FAILURES : {len(failures)}"
-        )
+        print(f"FAILURES : {len(failures)}")
 
         print()
 
         summary = (
-            failures
-            .groupby(
+            failures.groupby(
                 [
                     "dataset",
                     "rule",
@@ -1326,22 +1131,14 @@ def main() -> None:
                 ]
             )
             .size()
-            .sort_values(
-                ascending=False
-            )
+            .sort_values(ascending=False)
         )
 
-        print(
-            summary.to_string()
-        )
+        print(summary.to_string())
 
     print()
-    print(
-        "Report saved to:"
-    )
-    print(
-        FAILURE_REPORT
-    )
+    print("Report saved to:")
+    print(FAILURE_REPORT)
     print()
 
 

@@ -1,4 +1,5 @@
 """Cached, read-only access to the dashboard data source."""
+
 from __future__ import annotations
 
 import sqlite3
@@ -24,9 +25,24 @@ def _sector(name: Any, ticker: Any) -> str:
     groups = {
         "Financials": ("bank", "finance", "insurance", "financial"),
         "IT": ("tech", "software", "infosys", "tcs", "wipro", "hcl"),
-        "FMCG": ("consumer", "foods", "beverage", "paint", "hindustan", "dabur", "marico"),
+        "FMCG": (
+            "consumer",
+            "foods",
+            "beverage",
+            "paint",
+            "hindustan",
+            "dabur",
+            "marico",
+        ),
         "Energy": ("energy", "oil", "gas", "power", "petroleum"),
-        "Healthcare": ("pharma", "hospital", "health", "dr reddy", "cipla", "sun pharma"),
+        "Healthcare": (
+            "pharma",
+            "hospital",
+            "health",
+            "dr reddy",
+            "cipla",
+            "sun pharma",
+        ),
         "Automobiles": ("motor", "auto", "tata motors", "mahindra", "eicher"),
         "Metals": ("steel", "metal", "vedanta", "jsw"),
         "Telecom": ("telecom", "bharti", "airtel"),
@@ -54,32 +70,56 @@ def get_ratios(ticker: str | None = None, year: int | None = None) -> pd.DataFra
     clauses: list[str] = []
     params: list[Any] = []
     if ticker:
-        clauses.append("company_id = ?"); params.append(ticker)
+        clauses.append("company_id = ?")
+        params.append(ticker)
     if year is not None:
-        clauses.append("year = ?"); params.append(year)
-    if clauses: query += " WHERE " + " AND ".join(clauses)
+        clauses.append("year = ?")
+        params.append(year)
+    if clauses:
+        query += " WHERE " + " AND ".join(clauses)
     return _read(query + " ORDER BY company_id, year", tuple(params))
 
 
 @st.cache_data(ttl=600)
 def get_pl(ticker: str | None = None) -> pd.DataFrame:
-    return _read("SELECT * FROM profitandloss" + (" WHERE company_id = ?" if ticker else "") + " ORDER BY year", (ticker,) if ticker else ())
+    return _read(
+        "SELECT * FROM profitandloss"
+        + (" WHERE company_id = ?" if ticker else "")
+        + " ORDER BY year",
+        (ticker,) if ticker else (),
+    )
 
 
 @st.cache_data(ttl=600)
 def get_bs(ticker: str | None = None) -> pd.DataFrame:
-    return _read("SELECT * FROM balancesheet" + (" WHERE company_id = ?" if ticker else "") + " ORDER BY year", (ticker,) if ticker else ())
+    return _read(
+        "SELECT * FROM balancesheet"
+        + (" WHERE company_id = ?" if ticker else "")
+        + " ORDER BY year",
+        (ticker,) if ticker else (),
+    )
 
 
 @st.cache_data(ttl=600)
 def get_cf(ticker: str | None = None) -> pd.DataFrame:
-    return _read("SELECT * FROM cashflow" + (" WHERE company_id = ?" if ticker else "") + " ORDER BY year", (ticker,) if ticker else ())
+    return _read(
+        "SELECT * FROM cashflow"
+        + (" WHERE company_id = ?" if ticker else "")
+        + " ORDER BY year",
+        (ticker,) if ticker else (),
+    )
 
 
 @st.cache_data(ttl=600)
 def get_sectors() -> pd.DataFrame:
     companies = get_companies()
-    return companies.groupby("sector", as_index=False).size().rename(columns={"size": "company_count"}) if not companies.empty else pd.DataFrame(columns=["sector", "company_count"])
+    return (
+        companies.groupby("sector", as_index=False)
+        .size()
+        .rename(columns={"size": "company_count"})
+        if not companies.empty
+        else pd.DataFrame(columns=["sector", "company_count"])
+    )
 
 
 @st.cache_data(ttl=600)
@@ -87,21 +127,27 @@ def get_peers(group_name: str | None = None) -> pd.DataFrame:
     query = "SELECT * FROM peer_percentiles"
     params: tuple[Any, ...] = ()
     if group_name:
-        query += " WHERE peer_group = ?"; params = (group_name,)
+        query += " WHERE peer_group = ?"
+        params = (group_name,)
     return _read(query, params)
 
 
 @st.cache_data(ttl=600)
 def get_valuation(ticker: str | None = None) -> pd.DataFrame:
     path = ROOT / "output" / "valuation_summary.xlsx"
-    if not path.exists(): return pd.DataFrame()
+    if not path.exists():
+        return pd.DataFrame()
     frame = pd.read_excel(path)
-    return frame[frame.company_id == ticker] if ticker and "company_id" in frame else frame
+    return (
+        frame[frame.company_id == ticker] if ticker and "company_id" in frame else frame
+    )
 
 
 def latest(frame: pd.DataFrame, ticker: str | None = None) -> pd.DataFrame:
-    if frame.empty: return frame
-    if ticker: frame = frame[frame.company_id == ticker]
+    if frame.empty:
+        return frame
+    if ticker:
+        frame = frame[frame.company_id == ticker]
     return frame.sort_values("year").drop_duplicates("company_id", keep="last")
 
 

@@ -49,10 +49,9 @@ def normalize_year(value: Any) -> int | None:
     if isinstance(value, int):
         return value if 1900 <= value <= 2100 else None
 
-    if isinstance(value, float):
-        if value.is_integer():
-            year = int(value)
-            return year if 1900 <= year <= 2100 else None
+    if isinstance(value, float) and value.is_integer():
+        year = int(value)
+        return year if 1900 <= year <= 2100 else None
 
     text = str(value).strip()
 
@@ -215,10 +214,10 @@ def normalize_url(value: Any) -> str | None:
 
 
 __all__ = [
-    "normalize_year",
-    "normalize_ticker",
-    "normalize_text",
     "normalize_numeric",
     "normalize_percentage",
+    "normalize_text",
+    "normalize_ticker",
     "normalize_url",
+    "normalize_year",
 ]

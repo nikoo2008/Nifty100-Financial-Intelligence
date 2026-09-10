@@ -1,0 +1,346 @@
+company_id,type,rule_id,text,confidence_pct
+ABB,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ABB,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ABB,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ABB,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ADANIENSOL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ADANIENSOL,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ADANIENSOL,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ADANIENSOL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ADANIENT,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ADANIENT,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ADANIENT,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ADANIGREEN,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ADANIGREEN,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ADANIGREEN,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ADANIGREEN,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+ADANIGREEN,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ADANIPORTS,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ADANIPORTS,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ADANIPORTS,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ADANIPORTS,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ADANIPOWER,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ADANIPOWER,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ADANIPOWER,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ADANIPOWER,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+AMBUJACEM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+AMBUJACEM,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+AMBUJACEM,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+APOLLOHOSP,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+APOLLOHOSP,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ASIANPAINT,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ASIANPAINT,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ASIANPAINT,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ATGL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ATGL,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ATGL,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+ATGL,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ATGL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+AXISBANK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+AXISBANK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+AXISBANK,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BAJAJAUTO,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BAJAJAUTO,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BAJAJAUTO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BAJAJFINSV,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BAJAJFINSV,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+BAJAJFINSV,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BAJAJFINSV,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+BAJAJFINSV,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BAJAJHLDNG,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BAJAJHLDNG,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+BAJAJHLDNG,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BAJAJHLDNG,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+BAJAJHLDNG,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BAJAJHLDNG,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BAJFINANCE,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BAJFINANCE,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+BAJFINANCE,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BAJFINANCE,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+BAJFINANCE,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BAJFINANCE,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BANKBARODA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BANKBARODA,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+BANKBARODA,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BANKBARODA,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BEL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BEL,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BEL,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BEL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BHARTIARTL,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+BHARTIARTL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BHEL,pro,pro_00,Available financial history provides a basis for ongoing business analysis,61
+BHEL,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+BHEL,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+BOSCHLTD,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BOSCHLTD,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BOSCHLTD,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BPCL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BPCL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+BRITANNIA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+BRITANNIA,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+BRITANNIA,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+CANBK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+CANBK,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+CANBK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+CANBK,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+CHOLAFIN,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+CHOLAFIN,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+CHOLAFIN,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+CHOLAFIN,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+CHOLAFIN,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+CHOLAFIN,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+CIPLA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+CIPLA,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+CIPLA,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+CIPLA,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+COALINDIA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+COALINDIA,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+COALINDIA,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+COALINDIA,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+DABUR,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+DABUR,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+DABUR,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+DIVISLAB,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+DIVISLAB,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+DIVISLAB,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+DIVISLAB,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+DLF,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+DLF,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+DLF,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+DMART,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+DMART,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+DMART,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+DMART,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+DMART,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+DRREDDY,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+DRREDDY,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+DRREDDY,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+DRREDDY,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+EICHERMOT,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+EICHERMOT,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+EICHERMOT,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+EICHERMOT,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+GAIL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+GAIL,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+GAIL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+GODREJCP,pro,pro_00,Available financial history provides a basis for ongoing business analysis,61
+GODREJCP,con,con_04,Company reported a net loss in the most recent financial year,92
+GRASIM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+GRASIM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HAL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HAL,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HAL,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HAL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HAVELLS,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HAVELLS,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HAVELLS,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HCLTECH,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HCLTECH,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HCLTECH,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HDFCBANK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HDFCBANK,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+HDFCBANK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HDFCBANK,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+HDFCBANK,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+HDFCLIFE,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HDFCLIFE,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+HDFCLIFE,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HDFCLIFE,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+HDFCLIFE,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HDFCLIFE,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HEROMOTOCO,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HEROMOTOCO,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HEROMOTOCO,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HEROMOTOCO,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+HINDALCO,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HINDALCO,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HINDALCO,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HINDALCO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+HINDUNILVR,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+HINDUNILVR,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+HINDUNILVR,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+HINDUNILVR,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ICICIBANK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ICICIBANK,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ICICIBANK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ICICIBANK,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+ICICIGI,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ICICIGI,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ICICIGI,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+ICICIPRULI,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ICICIPRULI,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ICICIPRULI,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ICICIPRULI,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ICICIPRULI,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+INDIGO,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+INDIGO,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+INDIGO,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+INDIGO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+INDUSINDBK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+INDUSINDBK,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+INDUSINDBK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+INDUSINDBK,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+INFY,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+INFY,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+INFY,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+IOC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+IOC,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+IRCTC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+IRCTC,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+IRCTC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+IRCTC,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+IRCTC,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+IRFC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+IRFC,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+IRFC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+IRFC,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+ITC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ITC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ITC,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ITC,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+JINDALSTEL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+JINDALSTEL,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+JIOFIN,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+JIOFIN,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+JSWENERGY,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+JSWENERGY,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+JSWENERGY,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+JSWSTEEL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+JSWSTEEL,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+JSWSTEEL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+KOTAKBANK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+KOTAKBANK,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+KOTAKBANK,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+LICI,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+LICI,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+LODHA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+LODHA,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+LODHA,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+LT,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+LT,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+LTIM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+LTIM,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+LTIM,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+LTIM,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+LTIM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+M&M,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+M&M,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+MARUTI,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+MARUTI,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+MARUTI,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+MOTHERSON,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+MOTHERSON,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+NAUKRI,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+NAUKRI,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+NAUKRI,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+NAUKRI,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+NESTLEIND,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+NESTLEIND,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+NESTLEIND,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+NHPC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+NHPC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+NHPC,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+NTPC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+NTPC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+NTPC,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ONGC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ONGC,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+PFC,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+PFC,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+PFC,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+PIDILITIND,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+PIDILITIND,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+PIDILITIND,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+PNB,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+PNB,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+PNB,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+POWERGRID,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+POWERGRID,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+POWERGRID,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+RECLTD,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+RECLTD,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+RECLTD,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+RELIANCE,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+RELIANCE,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+SBILIFE,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SBILIFE,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+SBILIFE,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+SBILIFE,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+SBIN,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SBIN,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+SHREECEM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SHREECEM,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+SHREECEM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+SHRIRAMFIN,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SHRIRAMFIN,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+SHRIRAMFIN,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+SHRIRAMFIN,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+SIEMENS,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SIEMENS,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+SIEMENS,pro,pro_08,Consistent dividend yield above 2% backed by positive free cash flow,72
+SIEMENS,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+SUNPHARMA,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+SUNPHARMA,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+SUNPHARMA,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+SUNPHARMA,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TATACONSUM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TATACONSUM,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+TATACONSUM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TATAMOTORS,pro,pro_00,Available financial history provides a basis for ongoing business analysis,61
+TATAMOTORS,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TATAPOWER,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TATAPOWER,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+TATAPOWER,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TATASTEEL,pro,pro_00,Available financial history provides a basis for ongoing business analysis,61
+TATASTEEL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TCS,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TCS,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+TCS,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+TCS,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TECHM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TECHM,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+TECHM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TITAN,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TITAN,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+TITAN,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+TITAN,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TORNTPHARM,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TORNTPHARM,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+TORNTPHARM,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+TORNTPHARM,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TRENT,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+TRENT,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+TRENT,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+TRENT,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+TVSMOTOR,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+TVSMOTOR,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+AGTL,pro,pro_00,Available financial history provides a basis for ongoing business analysis,61
+AGTL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ULTRACEMCO,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ULTRACEMCO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+UNIONBANK,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+UNIONBANK,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+UNIONBANK,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+UNIONBANK,con,con_06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,86
+UNITDSPR,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+UNITDSPR,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+UNITDSPR,con,con_12,Revenue growing at below 5% over 5 years lags inflation and suggests limited business momentum,74
+VBL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+VBL,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+VBL,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+VBL,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+VBL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+VEDL,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+VEDL,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+VEDL,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+WIPRO,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+WIPRO,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+WIPRO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ZOMATO,pro,pro_04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,85
+ZOMATO,pro,pro_06,Net profit compounding at above 20% over 5 years creates significant shareholder value,82
+ZOMATO,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61
+ZYDUSLIFE,pro,pro_02,Strong free cash flow generation over 5 years signals healthy business fundamentals,82
+ZYDUSLIFE,pro,pro_05,Operating profit margin above 25% indicates strong pricing power and cost discipline,84
+ZYDUSLIFE,pro,pro_07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,80
+ZYDUSLIFE,con,con_00,Some financial indicators require continued monitoring as source history is incomplete,61

@@ -26,7 +26,6 @@ from src.etl.normaliser import (
     normalize_year,
 )
 
-
 # ============================================================
 # LOGGING
 # ============================================================
@@ -48,7 +47,6 @@ RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
 # ============================================================
 
 DATASET_CONFIG: dict[str, dict[str, Any]] = {
-
     "companies": {
         "file": "companies.xlsx",
         "required_columns": [
@@ -60,7 +58,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "website",
         ],
     },
-
     "profitandloss": {
         "file": "profitandloss.xlsx",
         "required_columns": [
@@ -81,7 +78,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "dividend_payout",
         ],
     },
-
     "balancesheet": {
         "file": "balancesheet.xlsx",
         "required_columns": [
@@ -100,7 +96,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "total_assets",
         ],
     },
-
     "cashflow": {
         "file": "cashflow.xlsx",
         "required_columns": [
@@ -113,7 +108,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "net_cash_flow",
         ],
     },
-
     "analysis": {
         "file": "analysis.xlsx",
         "required_columns": [
@@ -125,7 +119,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "roe",
         ],
     },
-
     "documents": {
         "file": "documents.xlsx",
         "required_columns": [
@@ -135,7 +128,6 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
             "annual_report",
         ],
     },
-
     "prosandcons": {
         "file": "prosandcons.xlsx",
         "required_columns": [
@@ -151,6 +143,7 @@ DATASET_CONFIG: dict[str, dict[str, Any]] = {
 # ============================================================
 # COLUMN NORMALISATION
 # ============================================================
+
 
 def normalize_column_name(column: Any) -> str:
     """
@@ -188,10 +181,7 @@ def normalize_dataframe_columns(
 
     df = df.copy()
 
-    df.columns = [
-        normalize_column_name(column)
-        for column in df.columns
-    ]
+    df.columns = [normalize_column_name(column) for column in df.columns]
 
     return df
 
@@ -199,6 +189,7 @@ def normalize_dataframe_columns(
 # ============================================================
 # SOURCE FILE READER
 # ============================================================
+
 
 def read_source_file(
     path: Path,
@@ -212,18 +203,13 @@ def read_source_file(
     """
 
     if not path.exists():
-        raise FileNotFoundError(
-            f"Source file not found: {path}"
-        )
+        raise FileNotFoundError(f"Source file not found: {path}")
 
     # --------------------------------------------------------
     # Read a small binary sample
     # --------------------------------------------------------
 
-    with path.open(
-        "rb"
-    ) as file:
-
+    with path.open("rb") as file:
         sample = file.read(4096)
 
     # --------------------------------------------------------
@@ -231,7 +217,6 @@ def read_source_file(
     # --------------------------------------------------------
 
     if sample.startswith(b"PK"):
-
         LOGGER.info(
             "Reading Excel workbook: %s",
             path,
@@ -273,6 +258,7 @@ def read_source_file(
 # COMPANIES DATASET REPAIR
 # ============================================================
 
+
 def repair_companies_dataset(
     df: pd.DataFrame,
 ) -> pd.DataFrame:
@@ -308,11 +294,9 @@ def repair_companies_dataset(
     current: list[Any] | None = None
 
     for _, row in df.iterrows():
-
         values: list[Any] = []
 
         for value in row.tolist():
-
             if pd.isna(value):
                 values.append(None)
             else:
@@ -327,10 +311,7 @@ def repair_companies_dataset(
         # Ignore completely empty physical rows
         # ----------------------------------------------------
 
-        if not any(
-            value not in (None, "")
-            for value in values
-        ):
+        if not any(value not in (None, "") for value in values):
             continue
 
         first_value = values[0]
@@ -340,7 +321,6 @@ def repair_companies_dataset(
         # ----------------------------------------------------
 
         if first_value not in (None, ""):
-
             if current is not None:
                 repaired_rows.append(current)
 
@@ -356,7 +336,6 @@ def repair_companies_dataset(
             continue
 
         for index, value in enumerate(values):
-
             if value in (None, ""):
                 continue
 
@@ -366,16 +345,12 @@ def repair_companies_dataset(
 
             # Empty destination field
             if current[index] in (None, ""):
-
                 current[index] = value
 
             else:
-
                 # If both are populated, append the continuation
                 # rather than silently deleting information.
-                current[index] = (
-                    f"{current[index]} {value}"
-                ).strip()
+                current[index] = (f"{current[index]} {value}").strip()
 
     # --------------------------------------------------------
     # Add final record
@@ -394,25 +369,17 @@ def repair_companies_dataset(
     # --------------------------------------------------------
 
     for column in repaired.columns:
-
         repaired[column] = repaired[column].apply(
-            lambda value:
-                value.strip()
-                if isinstance(value, str)
-                else value
+            lambda value: value.strip() if isinstance(value, str) else value
         )
 
     # --------------------------------------------------------
     # Remove rows that do not have a company ID
     # --------------------------------------------------------
 
-    repaired["id"] = repaired["id"].apply(
-        normalize_ticker
-    )
+    repaired["id"] = repaired["id"].apply(normalize_ticker)
 
-    repaired = repaired[
-        repaired["id"].notna()
-    ].copy()
+    repaired = repaired[repaired["id"].notna()].copy()
 
     # --------------------------------------------------------
     # Remove duplicate company IDs
@@ -426,14 +393,13 @@ def repair_companies_dataset(
         keep="first",
     )
 
-    return repaired.reset_index(
-        drop=True
-    )
+    return repaired.reset_index(drop=True)
 
 
 # ============================================================
 # SCHEMA VALIDATION
 # ============================================================
+
 
 def validate_columns(
     df: pd.DataFrame,
@@ -444,34 +410,24 @@ def validate_columns(
     """
 
     if dataset_name not in DATASET_CONFIG:
-        raise ValueError(
-            f"Unknown dataset: {dataset_name}"
-        )
+        raise ValueError(f"Unknown dataset: {dataset_name}")
 
-    required = set(
-        DATASET_CONFIG[
-            dataset_name
-        ]["required_columns"]
-    )
+    required = set(DATASET_CONFIG[dataset_name]["required_columns"])
 
-    actual = set(
-        df.columns
-    )
+    actual = set(df.columns)
 
     missing = required - actual
 
     if missing:
-
         raise ValueError(
-            f"Dataset '{dataset_name}' "
-            f"is missing required columns: "
-            f"{sorted(missing)}"
+            f"Dataset '{dataset_name}' is missing required columns: {sorted(missing)}"
         )
 
 
 # ============================================================
 # DATAFRAME NORMALISATION
 # ============================================================
+
 
 def normalise_dataset(
     dataset_name: str,
@@ -488,48 +444,29 @@ def normalise_dataset(
     # --------------------------------------------------------
 
     for column in df.columns:
-
         if df[column].dtype == object:
-
-            df[column] = df[column].apply(
-                normalize_text
-            )
+            df[column] = df[column].apply(normalize_text)
 
     # --------------------------------------------------------
     # Company IDs
     # --------------------------------------------------------
 
     if "company_id" in df.columns:
-
-        df["company_id"] = df[
-            "company_id"
-        ].apply(
-            normalize_ticker
-        )
+        df["company_id"] = df["company_id"].apply(normalize_ticker)
 
     # --------------------------------------------------------
     # Company primary key
     # --------------------------------------------------------
 
     if "id" in df.columns:
-
-        df["id"] = df[
-            "id"
-        ].apply(
-            normalize_ticker
-        )
+        df["id"] = df["id"].apply(normalize_ticker)
 
     # --------------------------------------------------------
     # Year
     # --------------------------------------------------------
 
     if "year" in df.columns:
-
-        df["year"] = df[
-            "year"
-        ].apply(
-            normalize_year
-        )
+        df["year"] = df["year"].apply(normalize_year)
 
     return df
 
@@ -537,6 +474,7 @@ def normalise_dataset(
 # ============================================================
 # LOAD SINGLE DATASET
 # ============================================================
+
 
 def load_dataset(
     dataset_name: str,
@@ -546,18 +484,11 @@ def load_dataset(
     """
 
     if dataset_name not in DATASET_CONFIG:
-        raise ValueError(
-            f"Unknown dataset: {dataset_name}"
-        )
+        raise ValueError(f"Unknown dataset: {dataset_name}")
 
-    config = DATASET_CONFIG[
-        dataset_name
-    ]
+    config = DATASET_CONFIG[dataset_name]
 
-    path = (
-        RAW_DATA_DIR
-        / config["file"]
-    )
+    path = RAW_DATA_DIR / config["file"]
 
     LOGGER.info(
         "Loading dataset '%s' from %s",
@@ -565,9 +496,7 @@ def load_dataset(
         path,
     )
 
-    df = read_source_file(
-        path
-    )
+    df = read_source_file(path)
 
     LOGGER.info(
         "Raw shape for '%s': %s",
@@ -579,9 +508,7 @@ def load_dataset(
     # Normalise columns
     # --------------------------------------------------------
 
-    df = normalize_dataframe_columns(
-        df
-    )
+    df = normalize_dataframe_columns(df)
 
     LOGGER.info(
         "Detected columns for '%s': %s",
@@ -594,16 +521,11 @@ def load_dataset(
     # --------------------------------------------------------
 
     if dataset_name == "companies":
-
         before_rows = len(df)
 
-        LOGGER.info(
-            "Repairing malformed company records..."
-        )
+        LOGGER.info("Repairing malformed company records...")
 
-        df = repair_companies_dataset(
-            df
-        )
+        df = repair_companies_dataset(df)
 
         LOGGER.info(
             "Companies repaired: %d -> %d rows",
@@ -628,30 +550,16 @@ def load_dataset(
     # use the required schema.
     # --------------------------------------------------------
 
-    required_columns = (
-        DATASET_CONFIG[
-            dataset_name
-        ]["required_columns"]
-    )
+    required_columns = DATASET_CONFIG[dataset_name]["required_columns"]
 
     # Preserve required columns first.
     # Keep additional columns because the validator needs to
     # identify unexpected columns where applicable.
-    ordered = [
-        column
-        for column in required_columns
-        if column in df.columns
-    ]
+    ordered = [column for column in required_columns if column in df.columns]
 
-    extras = [
-        column
-        for column in df.columns
-        if column not in ordered
-    ]
+    extras = [column for column in df.columns if column not in ordered]
 
-    df = df[
-        ordered + extras
-    ]
+    df = df[ordered + extras]
 
     # --------------------------------------------------------
     # Normalise values
@@ -666,9 +574,7 @@ def load_dataset(
     # Reset index
     # --------------------------------------------------------
 
-    df = df.reset_index(
-        drop=True
-    )
+    df = df.reset_index(drop=True)
 
     LOGGER.info(
         "Final shape for '%s': %s",
@@ -683,23 +589,16 @@ def load_dataset(
 # LOAD ALL CORE DATASETS
 # ============================================================
 
+
 def load_all_core_datasets() -> dict[str, pd.DataFrame]:
     """
     Load all seven Day-03 core datasets.
     """
 
-    datasets: dict[
-        str,
-        pd.DataFrame
-    ] = {}
+    datasets: dict[str, pd.DataFrame] = {}
 
     for dataset_name in DATASET_CONFIG:
-
-        datasets[
-            dataset_name
-        ] = load_dataset(
-            dataset_name
-        )
+        datasets[dataset_name] = load_dataset(dataset_name)
 
     return datasets
 
@@ -707,6 +606,7 @@ def load_all_core_datasets() -> dict[str, pd.DataFrame]:
 # ============================================================
 # DATASET SUMMARY
 # ============================================================
+
 
 def create_dataset_summary(
     datasets: dict[str, pd.DataFrame],
@@ -718,92 +618,54 @@ def create_dataset_summary(
     rows = []
 
     for name, df in datasets.items():
-
         rows.append(
             {
                 "dataset": name,
                 "rows": len(df),
                 "columns": len(df.columns),
-                "column_names": ", ".join(
-                    str(column)
-                    for column in df.columns
-                ),
+                "column_names": ", ".join(str(column) for column in df.columns),
             }
         )
 
-    return pd.DataFrame(
-        rows
-    )
+    return pd.DataFrame(rows)
 
 
 # ============================================================
 # MAIN
 # ============================================================
 
+
 def main() -> None:
 
     logging.basicConfig(
         level=logging.INFO,
-        format=(
-            "%(asctime)s | "
-            "%(levelname)s | "
-            "%(message)s"
-        ),
+        format=("%(asctime)s | %(levelname)s | %(message)s"),
     )
 
     print()
-    print(
-        "========================================"
-    )
-    print(
-        "NIFTY 100 DATASET LOADING"
-    )
-    print(
-        "========================================"
-    )
+    print("========================================")
+    print("NIFTY 100 DATASET LOADING")
+    print("========================================")
     print()
 
-    print(
-        "Loading datasets..."
-    )
+    print("Loading datasets...")
 
-    datasets = (
-        load_all_core_datasets()
-    )
+    datasets = load_all_core_datasets()
 
-    summary = (
-        create_dataset_summary(
-            datasets
-        )
-    )
+    summary = create_dataset_summary(datasets)
 
     print()
-    print(
-        "========================================"
-    )
-    print(
-        "NIFTY 100 DATASET LOADING SUMMARY"
-    )
-    print(
-        "========================================"
-    )
+    print("========================================")
+    print("NIFTY 100 DATASET LOADING SUMMARY")
+    print("========================================")
     print()
 
-    print(
-        summary.to_string(
-            index=False
-        )
-    )
+    print(summary.to_string(index=False))
 
     print()
-    print(
-        f"Successfully loaded "
-        f"{len(datasets)} core datasets."
-    )
+    print(f"Successfully loaded {len(datasets)} core datasets.")
 
-    LOGGER.info(
-        "Core dataset loading completed successfully"
-    )
+    LOGGER.info("Core dataset loading completed successfully")
 
 
 # ============================================================
