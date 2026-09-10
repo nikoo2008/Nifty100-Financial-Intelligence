@@ -47,3 +47,19 @@ python -m src.analytics.valuation
 ```
 
 This writes `output/valuation_summary.xlsx` and `output/valuation_flags.csv`. The supplied source currently contains 101 companies, so outputs retain 101 rows rather than deleting records to force a 92-company count. If `data/raw/market_cap.xlsx` is supplied, its market-cap column is used; otherwise the valuation module uses latest book equity as a deterministic proxy and keeps the required output columns.
+
+## Sprint 5 cash flow, NLP, and reports
+
+Generate the Sprint 5 artifacts with:
+
+```powershell
+python -m src.nlp.parser
+python -m src.nlp.pros_cons_generator
+python -c "from src.analytics.cashflow_kpis import write_cashflow_outputs; write_cashflow_outputs()"
+python -m src.analytics.capital_allocation
+python -m src.reports.tearsheet
+python -m src.reports.sector_report
+python -m src.reports.portfolio_report
+```
+
+The source universe contains 101 companies. `AGTL` is logged in `output/skipped_tearsheets.csv` because it has fewer than three P&L years; 100 two-page tearsheets and 11 sector reports are generated. NLP output uses confidence-filtered, transparent rules and includes a minimum evidence/fallback signal for companies with incomplete source histories.

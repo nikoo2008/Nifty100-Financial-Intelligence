@@ -1,0 +1,18 @@
+company_id,metric_type,raw_text,reason
+SBILIFE,compounded_sales_growth,TTM:            43%,pattern_not_matched
+SBILIFE,compounded_profit_growth,TTM:                 18%,pattern_not_matched
+SBILIFE,stock_price_cagr,     1 Year:         -2%,pattern_not_matched
+SBILIFE,roe,Last Year:      12%,pattern_not_matched
+TCS,compounded_sales_growth,TTM:            5%             ,pattern_not_matched
+TCS,compounded_profit_growth,TTM:                 8%,pattern_not_matched
+TCS,roe,Last Year:       52%,pattern_not_matched
+WIPRO,stock_price_cagr,      3 Years:      -1%,pattern_not_matched
+WIPRO,compounded_sales_growth,TTM:           -3%,pattern_not_matched
+WIPRO,compounded_profit_growth,TTM:                 1%,pattern_not_matched
+WIPRO,roe,Last Year:       14%,pattern_not_matched
+HDFCBANK,compounded_sales_growth,TTM:            47%,pattern_not_matched
+HDFCBANK,compounded_profit_growth,TTM:                27%,pattern_not_matched
+HDFCBANK,roe,Last Year:    17%,pattern_not_matched
+INFY,compounded_sales_growth,TTM:            3%,pattern_not_matched
+INFY,compounded_profit_growth,TTM:                 8%,pattern_not_matched
+INFY,roe,Last Year:     32%,pattern_not_matched
