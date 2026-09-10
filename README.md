@@ -29,3 +29,21 @@ The final validation run reproduces 1,192 source-quality findings in `reports/va
 ## Sprint 3 outputs
 
 The screener supports 15 configured metrics, six presets, custom `min_`/`max_` thresholds, winsorized quality scoring, and a financials debt/equity carve-out. The peer engine writes percentile rankings, peer medians, and radar charts from available company history. Companies without peer data are retained with missing percentiles; no peer values are fabricated.
+
+## Sprint 4 dashboard and valuation
+
+Start the dashboard from the project root with:
+
+```powershell
+streamlit run src/dashboard/app.py
+```
+
+The eight screens are Home, Company Profile, Screener, Peers, Trends, Sectors, Capital Allocation, and Annual Reports. The screener supports live thresholds and CSV download. Pages show `N/A` or an availability note when a source metric or year is missing.
+
+Run valuation output generation with:
+
+```powershell
+python -m src.analytics.valuation
+```
+
+This writes `output/valuation_summary.xlsx` and `output/valuation_flags.csv`. The supplied source currently contains 101 companies, so outputs retain 101 rows rather than deleting records to force a 92-company count. If `data/raw/market_cap.xlsx` is supplied, its market-cap column is used; otherwise the valuation module uses latest book equity as a deterministic proxy and keeps the required output columns.
