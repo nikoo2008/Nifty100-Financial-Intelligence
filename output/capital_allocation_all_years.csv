@@ -686,9 +686,9 @@ JINDALSTEL,2022.0,cash_compounder
 JINDALSTEL,2023.0,cash_compounder
 JINDALSTEL,2024.0,capital_intensive
 JINDALSTEL,,insufficient_data
-JIOFIN,2023.0,cash_compounder
-JIOFIN,2024.0,deleveraging
-JIOFIN,,insufficient_data
+JIOFIN,2023.0,financial_institution
+JIOFIN,2024.0,financial_institution
+JIOFIN,,financial_institution
 JSWENERGY,2013.0,cash_compounder
 JSWENERGY,2014.0,cash_compounder
 JSWENERGY,2015.0,cash_compounder

@@ -24,7 +24,9 @@ INVERSE = {"debt_to_equity"}
 
 
 def build_peer_percentiles(
-    ratios: pd.DataFrame, companies: pd.DataFrame
+    ratios: pd.DataFrame,
+    companies: pd.DataFrame,
+    peer_groups: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     frame = (
         ratios.sort_values(["company_id", "year"])
@@ -33,7 +35,11 @@ def build_peer_percentiles(
     )
     names = companies.set_index("id")["company_name"]
     frame["company_name"] = frame["company_id"].map(names)
-    frame["peer_group"] = (
+    frame["peer_group"] = pd.NA
+    if peer_groups is not None and not peer_groups.empty:
+        groups = peer_groups.drop_duplicates("company_id").set_index("company_id")
+        frame["peer_group"] = frame["company_id"].map(groups["peer_group_name"])
+    frame["peer_group"] = frame["peer_group"].fillna(
         frame["company_name"]
         .fillna("")
         .map(

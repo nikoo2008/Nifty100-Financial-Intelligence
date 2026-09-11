@@ -7,39 +7,21 @@ from pathlib import Path
 
 import pandas as pd
 
+from src.etl.supplementary import load_supplementary_dataset
+
 ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = ROOT / "nifty100.db"
 OUTPUT = ROOT / "output"
 
 
 def _market_caps(companies: pd.DataFrame) -> pd.DataFrame:
-    for path in (
-        ROOT / "data" / "raw" / "market_cap.xlsx",
-        ROOT / "data" / "market_cap.xlsx",
-    ):
-        if path.exists():
-            frame = pd.read_excel(path)
-            ticker = next(
-                (
-                    c
-                    for c in frame.columns
-                    if str(c).lower() in {"company_id", "ticker", "symbol", "id"}
-                ),
-                None,
-            )
-            value = next(
-                (
-                    c
-                    for c in frame.columns
-                    if "market" in str(c).lower() and "cap" in str(c).lower()
-                ),
-                None,
-            )
-            if ticker and value:
-                return frame.rename(
-                    columns={ticker: "company_id", value: "market_cap_crore"}
-                )[["company_id", "market_cap_crore"]]
-    return pd.DataFrame({"company_id": companies.company_id, "market_cap_crore": pd.NA})
+    frame = load_supplementary_dataset("market_cap")
+    frame["market_cap_crore"] = pd.to_numeric(
+        frame["market_cap_crore"], errors="coerce"
+    )
+    return frame[["company_id", "market_cap_crore", "year"]].sort_values("year").drop_duplicates(
+        "company_id", keep="last"
+    )[["company_id", "market_cap_crore"]]
 
 
 def build_valuation_summary(database_path: Path = DB_PATH) -> pd.DataFrame:
@@ -50,17 +32,9 @@ def build_valuation_summary(database_path: Path = DB_PATH) -> pd.DataFrame:
         ratios = pd.read_sql_query("SELECT * FROM financial_ratios", connection)
         pnl = pd.read_sql_query("SELECT * FROM profitandloss", connection)
         bs = pd.read_sql_query("SELECT * FROM balancesheet", connection)
-    companies["sector"] = companies.apply(
-        lambda row: (
-            "Financials"
-            if any(
-                w in f"{row.company_name} {row.company_id}".lower()
-                for w in ("bank", "finance", "insurance")
-            )
-            else "Diversified"
-        ),
-        axis=1,
-    )
+    sectors = load_supplementary_dataset("sectors")[["company_id", "broad_sector"]]
+    companies = companies.merge(sectors, on="company_id", how="left")
+    companies["sector"] = companies["broad_sector"].fillna("Diversified")
     latest = ratios.sort_values("year").drop_duplicates("company_id", keep="last")
     latest_pnl = pnl.sort_values("year").drop_duplicates("company_id", keep="last")
     latest_bs = bs.sort_values("year").drop_duplicates("company_id", keep="last")
@@ -82,7 +56,6 @@ def build_valuation_summary(database_path: Path = DB_PATH) -> pd.DataFrame:
     book_equity = pd.to_numeric(frame.equity_capital, errors="coerce").fillna(
         0
     ) + pd.to_numeric(frame.reserves, errors="coerce").fillna(0)
-    frame["market_cap_crore"] = frame.market_cap_crore.fillna(book_equity)
     frame["P/E"] = frame.market_cap_crore / pd.to_numeric(
         frame.net_profit, errors="coerce"
     ).replace(0, pd.NA)

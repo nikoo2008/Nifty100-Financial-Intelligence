@@ -611,6 +611,7 @@ def read_source_file(
 
         return pd.read_excel(
             file_path,
+            header=1,
             dtype=object,
         )
 

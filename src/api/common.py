@@ -69,10 +69,13 @@ def sector_for(name: Any, ticker: Any) -> str:
 def companies_frame() -> pd.DataFrame:
     """Return companies enriched with broad sectors."""
     frame = read_table("companies")
-    frame["broad_sector"] = [
-        sector_for(n, t) for n, t in zip(frame.company_name, frame.id)
-    ]
-    frame["sub_sector"] = frame.broad_sector
+    with sqlite3.connect(DB_PATH) as connection:
+        sectors = pd.read_sql_query(
+            "SELECT company_id, broad_sector, sub_sector FROM sectors", connection
+        )
+    frame = frame.merge(sectors, left_on="id", right_on="company_id", how="left")
+    frame["broad_sector"] = frame["broad_sector"].fillna("Diversified")
+    frame["sub_sector"] = frame["sub_sector"].fillna(frame.broad_sector)
     return frame
 
 

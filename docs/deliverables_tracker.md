@@ -54,5 +54,5 @@ make clean
 - Skip Financials when applying the D/E screener filter.
 - Label negative-base CAGR cases as TURNAROUND.
 - Display Debt Free when interest expense is zero.
-- Label simulated stock-price and market-cap datasets as SIMULATED.
+- Keep the supplied stock-price and market-cap datasets marked as real source data.
 - Run `make test` before commits; zero test failures are required.

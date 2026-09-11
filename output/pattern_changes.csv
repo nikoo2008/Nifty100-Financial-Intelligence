@@ -269,8 +269,6 @@ JINDALSTEL,2015.0,capital_intensive,distressed
 JINDALSTEL,2021.0,distressed,cash_compounder
 JINDALSTEL,2024.0,cash_compounder,capital_intensive
 JINDALSTEL,,capital_intensive,insufficient_data
-JIOFIN,2024.0,cash_compounder,deleveraging
-JIOFIN,,deleveraging,insufficient_data
 JSWENERGY,2023.0,cash_compounder,capital_intensive
 JSWENERGY,,capital_intensive,insufficient_data
 JSWSTEEL,2014.0,cash_compounder,growth_investor

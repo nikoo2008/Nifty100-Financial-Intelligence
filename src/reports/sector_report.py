@@ -12,8 +12,6 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
-from src.dashboard.utils.db import _sector
-
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -26,10 +24,13 @@ def generate_sector_reports(
     paths: list[Path] = []
     with sqlite3.connect(database_path) as c:
         companies = pd.read_sql_query("SELECT id, company_name FROM companies", c)
+        sectors = pd.read_sql_query(
+            "SELECT company_id, broad_sector FROM sectors", c
+        )
         ratios = pd.read_sql_query("SELECT * FROM financial_ratios", c)
-    companies["sector"] = [
-        _sector(n, t) for n, t in zip(companies.company_name, companies.id)
-    ]
+    companies = companies.merge(sectors, left_on="id", right_on="company_id", how="left")
+    companies["sector"] = companies["broad_sector"].fillna("Diversified")
+    companies = companies[["id", "company_name", "sector"]]
     latest = (
         ratios.sort_values("year")
         .drop_duplicates("company_id", keep="last")

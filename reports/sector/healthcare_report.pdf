@@ -32,7 +32,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20260910100511+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260910100511+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20260911095835+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260911095835+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 4255
+/Length 4712
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -72,11 +72,11 @@ BT 1 0 0 1 232.7717 98 Tm (nan) Tj T* ET
 BT 1 0 0 1 6 80 Tm (return_on_capital_employed_pct) Tj T* ET
 BT 1 0 0 1 232.7717 80 Tm (nan) Tj T* ET
 BT 1 0 0 1 6 62 Tm (net_margin_pct) Tj T* ET
-BT 1 0 0 1 232.7717 62 Tm (17.45) Tj T* ET
+BT 1 0 0 1 232.7717 62 Tm (17.96) Tj T* ET
 BT 1 0 0 1 6 44 Tm (debt_to_equity) Tj T* ET
 BT 1 0 0 1 232.7717 44 Tm (nan) Tj T* ET
 BT 1 0 0 1 6 26 Tm (cagr_5y) Tj T* ET
-BT 1 0 0 1 232.7717 26 Tm (10.78) Tj T* ET
+BT 1 0 0 1 232.7717 26 Tm (10.22) Tj T* ET
 BT 1 0 0 1 6 8 Tm (free_cash_flow) Tj T* ET
 BT 1 0 0 1 232.7717 8 Tm (nan) Tj T* ET
 q
@@ -109,36 +109,45 @@ BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Companies and latest available metrics) Tj T*
 Q
 Q
 q
-1 0 0 1 52.44094 481.1969 cm
+1 0 0 1 52.44094 451.1969 cm
 q
 .07451 .133333 .219608 rg
-n 0 108 490.3937 -18 re f*
+n 0 138 490.3937 -18 re f*
 1 1 1 rg
 BT /F1 6 Tf 12 TL ET
-BT 1 0 0 1 6 99 Tm (Ticker) Tj T* ET
-BT 1 0 0 1 62.69291 99 Tm (Company) Tj T* ET
-BT 1 0 0 1 227.1024 99 Tm (ROE) Tj T* ET
-BT 1 0 0 1 269.622 99 Tm (ROCE) Tj T* ET
-BT 1 0 0 1 312.1417 99 Tm (NPM) Tj T* ET
-BT 1 0 0 1 354.6614 99 Tm (D/E) Tj T* ET
-BT 1 0 0 1 397.1811 99 Tm (CAGR) Tj T* ET
-BT 1 0 0 1 439.7008 99 Tm (FCF) Tj T* ET
+BT 1 0 0 1 6 129 Tm (Ticker) Tj T* ET
+BT 1 0 0 1 62.69291 129 Tm (Company) Tj T* ET
+BT 1 0 0 1 227.1024 129 Tm (ROE) Tj T* ET
+BT 1 0 0 1 269.622 129 Tm (ROCE) Tj T* ET
+BT 1 0 0 1 312.1417 129 Tm (NPM) Tj T* ET
+BT 1 0 0 1 354.6614 129 Tm (D/E) Tj T* ET
+BT 1 0 0 1 397.1811 129 Tm (CAGR) Tj T* ET
+BT 1 0 0 1 439.7008 129 Tm (FCF) Tj T* ET
 0 0 0 rg
-BT 1 0 0 1 6 81 Tm (APOLLOHOSP) Tj T* ET
-BT 1 0 0 1 62.69291 81 Tm (Apollo Hospitals) Tj T* ET
+BT 1 0 0 1 6 99 Tm (APOLLOHOSP) Tj T* ET
+BT 1 0 0 1 62.69291 111 Tm (Apollo Hospitals) Tj T* ET
+BT 1 0 0 1 62.69291 99 Tm (Chain of In) Tj T* ET
+BT 1 0 0 1 227.1024 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 269.622 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 312.1417 99 Tm (5.979774292833065) Tj T* ET
+BT 1 0 0 1 354.6614 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 397.1811 99 Tm (14.660042602193135) Tj T* ET
+BT 1 0 0 1 439.7008 99 Tm (nan) Tj T* ET
+BT 1 0 0 1 6 81 Tm (CIPLA) Tj T* ET
+BT 1 0 0 1 62.69291 81 Tm (Cipla Ltd) Tj T* ET
 BT 1 0 0 1 227.1024 81 Tm (nan) Tj T* ET
 BT 1 0 0 1 269.622 81 Tm (nan) Tj T* ET
-BT 1 0 0 1 312.1417 81 Tm (5.979774292833065) Tj T* ET
+BT 1 0 0 1 312.1417 81 Tm (18.48337719135688) Tj T* ET
 BT 1 0 0 1 354.6614 81 Tm (nan) Tj T* ET
-BT 1 0 0 1 397.1811 81 Tm (14.660042602193135) Tj T* ET
+BT 1 0 0 1 397.1811 81 Tm (9.513860126378049) Tj T* ET
 BT 1 0 0 1 439.7008 81 Tm (nan) Tj T* ET
-BT 1 0 0 1 6 63 Tm (CIPLA) Tj T* ET
-BT 1 0 0 1 62.69291 63 Tm (Cipla Ltd) Tj T* ET
+BT 1 0 0 1 6 63 Tm (DIVISLAB) Tj T* ET
+BT 1 0 0 1 62.69291 63 Tm (Divis Laboratories Ltd) Tj T* ET
 BT 1 0 0 1 227.1024 63 Tm (nan) Tj T* ET
 BT 1 0 0 1 269.622 63 Tm (nan) Tj T* ET
-BT 1 0 0 1 312.1417 63 Tm (18.48337719135688) Tj T* ET
+BT 1 0 0 1 312.1417 63 Tm (21.31413977246343) Tj T* ET
 BT 1 0 0 1 354.6614 63 Tm (nan) Tj T* ET
-BT 1 0 0 1 397.1811 63 Tm (9.513860126378049) Tj T* ET
+BT 1 0 0 1 397.1811 63 Tm (9.664930361854074) Tj T* ET
 BT 1 0 0 1 439.7008 63 Tm (nan) Tj T* ET
 BT 1 0 0 1 6 45 Tm (DRREDDY) Tj T* ET
 BT 1 0 0 1 62.69291 45 Tm (Dr Reddys Laboratories Ltd) Tj T* ET
@@ -169,22 +178,23 @@ q
 1 j
 .827451 .827451 .827451 RG
 .2 w
-n 0 108 m 490.3937 108 l S
+n 0 138 m 490.3937 138 l S
 n 0 0 m 490.3937 0 l S
-n 0 0 m 0 108 l S
-n 490.3937 0 m 490.3937 108 l S
+n 0 0 m 0 138 l S
+n 490.3937 0 m 490.3937 138 l S
+n 0 120 m 490.3937 120 l S
 n 0 90 m 490.3937 90 l S
 n 0 72 m 490.3937 72 l S
 n 0 54 m 490.3937 54 l S
 n 0 36 m 490.3937 36 l S
 n 0 18 m 490.3937 18 l S
-n 56.69291 0 m 56.69291 108 l S
-n 221.1024 0 m 221.1024 108 l S
-n 263.622 0 m 263.622 108 l S
-n 306.1417 0 m 306.1417 108 l S
-n 348.6614 0 m 348.6614 108 l S
-n 391.1811 0 m 391.1811 108 l S
-n 433.7008 0 m 433.7008 108 l S
+n 56.69291 0 m 56.69291 138 l S
+n 221.1024 0 m 221.1024 138 l S
+n 263.622 0 m 263.622 138 l S
+n 306.1417 0 m 306.1417 138 l S
+n 348.6614 0 m 348.6614 138 l S
+n 391.1811 0 m 391.1811 138 l S
+n 433.7008 0 m 433.7008 138 l S
 Q
 Q
 Q
@@ -205,7 +215,7 @@ xref
 trailer
 <<
 /ID 
-[<df99fd3a22a7705bc6a232cbfe8fd523><df99fd3a22a7705bc6a232cbfe8fd523>]
+[<78aeda07a7cf21ef0e78bffc8add3bb9><78aeda07a7cf21ef0e78bffc8add3bb9>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 6 0 R
@@ -213,5 +223,5 @@ trailer
 /Size 9
 >>
 startxref
-5237
+5694
 %%EOF

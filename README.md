@@ -46,7 +46,9 @@ Run valuation output generation with:
 python -m src.analytics.valuation
 ```
 
-This writes `output/valuation_summary.xlsx` and `output/valuation_flags.csv`. The supplied source currently contains 101 companies, so outputs retain 101 rows rather than deleting records to force a 92-company count. If `data/raw/market_cap.xlsx` is supplied, its market-cap column is used; otherwise the valuation module uses latest book equity as a deterministic proxy and keeps the required output columns.
+This writes `output/valuation_summary.xlsx` and `output/valuation_flags.csv`. The supplied source currently contains 101 companies, so outputs retain 101 rows rather than deleting records to force a 92-company count. Valuation uses the real `data/raw/market_cap.xlsx` workbook; companies without a market-cap record remain missing in valuation metrics rather than receiving a book-equity proxy.
+
+The supplementary real workbooks `market_cap.xlsx`, `stock_prices.xlsx`, `financial_ratios.xlsx`, `sectors.xlsx`, and `peer_groups.xlsx` are loaded with their direct header row and persisted in SQLite as `market_cap`, `stock_prices`, `source_financial_ratios`, `sectors`, and `peer_groups`. Core workbooks continue to use `pd.read_excel(path, header=1)`.
 
 ## Sprint 5 cash flow, NLP, and reports
 

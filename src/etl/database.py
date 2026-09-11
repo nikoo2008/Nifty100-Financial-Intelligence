@@ -11,6 +11,7 @@ import pandas as pd
 from src.analytics.peer import build_peer_percentiles
 from src.analytics.ratios import build_financial_ratios
 from src.etl.loader import CORE_DATASETS, load_all_core_datasets
+from src.etl.supplementary import load_all_supplementary_datasets
 from src.screener.engine import generate_screener_outputs
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -215,6 +216,7 @@ def load_database(
     database_path: Path = DATABASE_PATH,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     datasets = load_all_core_datasets()
+    supplementary = load_all_supplementary_datasets()
     database_path.parent.mkdir(parents=True, exist_ok=True)
     audit_rows = []
     with sqlite3.connect(database_path) as connection:
@@ -257,7 +259,9 @@ def load_database(
                 "rows_rejected": 0,
             }
         )
-        percentiles = build_peer_percentiles(ratios, datasets["companies"])
+        percentiles = build_peer_percentiles(
+            ratios, datasets["companies"], supplementary["peer_groups"]
+        )
         peer_columns = [
             column[1]
             for column in connection.execute(
@@ -283,6 +287,8 @@ def load_database(
         fk_errors = connection.execute("PRAGMA foreign_key_check").fetchall()
         if fk_errors:
             raise RuntimeError(f"Foreign-key check failed: {fk_errors}")
+        for table_name, dataframe in supplementary.items():
+            dataframe.to_sql(table_name, connection, if_exists="replace", index=False)
     audit = pd.DataFrame(audit_rows)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     audit.to_csv(OUTPUT_DIR / "load_audit.csv", index=False)

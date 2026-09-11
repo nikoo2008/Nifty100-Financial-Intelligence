@@ -1,8 +1,4 @@
 dataset,rule,severity,row,column,value,message
-companies,TEXT_NOT_EMPTY,WARNING,5,company_name,,Text field 'company_name' is empty.
-companies,TEXT_NOT_EMPTY,WARNING,38,company_name,,Text field 'company_name' is empty.
-companies,TEXT_NOT_EMPTY,WARNING,46,company_name,,Text field 'company_name' is empty.
-companies,TEXT_NOT_EMPTY,WARNING,54,company_name,,Text field 'company_name' is empty.
 profitandloss,YEAR_NOT_NULL,ERROR,12,year,,Year cannot be null.
 profitandloss,YEAR_NOT_NULL,ERROR,24,year,,Year cannot be null.
 profitandloss,YEAR_NOT_NULL,ERROR,37,year,,Year cannot be null.
@@ -1183,11 +1179,9 @@ documents,URL_FORMAT,WARNING,1567,annual_report,Null,URL should start with http:
 documents,URL_FORMAT,WARNING,1568,annual_report,Null,URL should start with http:// or https://.
 documents,URL_FORMAT,WARNING,1583,annual_report,Null,URL should start with http:// or https://.
 documents,URL_FORMAT,WARNING,1584,annual_report,Null,URL should start with http:// or https://.
-documents,UNEXPECTED_COLUMN,WARNING,,,,Unexpected column detected: ''.
 prosandcons,TEXT_NOT_EMPTY,WARNING,6,pros,,Text field 'pros' is empty.
 prosandcons,TEXT_NOT_EMPTY,WARNING,7,pros,,Text field 'pros' is empty.
 prosandcons,TEXT_NOT_EMPTY,WARNING,8,pros,,Text field 'pros' is empty.
 prosandcons,TEXT_NOT_EMPTY,WARNING,11,pros,,Text field 'pros' is empty.
 prosandcons,TEXT_NOT_EMPTY,WARNING,12,pros,,Text field 'pros' is empty.
 prosandcons,TEXT_NOT_EMPTY,WARNING,15,cons,,Text field 'cons' is empty.
-prosandcons,UNEXPECTED_COLUMN,WARNING,,,,Unexpected column detected: ''.

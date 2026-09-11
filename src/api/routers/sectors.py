@@ -41,6 +41,9 @@ def sector_companies(sector: str):
         right_on="id",
         how="left",
     )
-    if not (frame.broad_sector.str.casefold() == sector.casefold()).any():
+    requested_sector = {
+        "it": "information technology",
+    }.get(sector.casefold(), sector.casefold())
+    if not (frame.broad_sector.str.casefold() == requested_sector).any():
         raise HTTPException(404, "Unknown sector")
-    return json_records(frame[frame.broad_sector.str.casefold() == sector.casefold()])
+    return json_records(frame[frame.broad_sector.str.casefold() == requested_sector])

@@ -1,6 +1,6 @@
 company_id,company_record_found,company_name,child_rows,child_row_counts,status
 ABB,True,Abbott India Ltd,65,profitandloss=13; balancesheet=13; cashflow=23; analysis=0; documents=16; prosandcons=0,PASS
-HDFCBANK,True,,61,profitandloss=13; balancesheet=12; cashflow=12; analysis=4; documents=16; prosandcons=4,PASS
+HDFCBANK,True,HDFC Bank Ltd,61,profitandloss=13; balancesheet=12; cashflow=12; analysis=4; documents=16; prosandcons=4,PASS
 M&M,True,Mahindra & Mahindra Ltd,54,profitandloss=13; balancesheet=13; cashflow=12; analysis=0; documents=16; prosandcons=0,PASS
 SBILIFE,True,SBI Life Insurance Company Ltd,63,profitandloss=13; balancesheet=13; cashflow=12; analysis=4; documents=16; prosandcons=5,PASS
 TCS,True,Tata Consultancy Services Ltd,73,profitandloss=13; balancesheet=13; cashflow=24; analysis=4; documents=16; prosandcons=3,PASS

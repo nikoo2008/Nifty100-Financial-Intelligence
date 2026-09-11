@@ -59,8 +59,11 @@ def _sector(name: Any, ticker: Any) -> str:
 def get_companies() -> pd.DataFrame:
     frame = _read("SELECT * FROM companies ORDER BY company_name")
     if not frame.empty:
-        frame["sector"] = [_sector(n, t) for n, t in zip(frame.company_name, frame.id)]
+        sectors = _read("SELECT company_id, broad_sector, sub_sector FROM sectors")
+        frame = frame.merge(sectors, left_on="id", right_on="company_id", how="left")
+        frame["sector"] = frame["broad_sector"].fillna("Diversified")
         frame["broad_sector"] = frame["sector"]
+        frame["sub_sector"] = frame["sub_sector"].fillna(frame["sector"])
     return frame
 
 
